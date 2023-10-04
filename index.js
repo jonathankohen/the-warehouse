@@ -1,4 +1,4 @@
-(function () {
+$(document).ready(function () {
 	let reviews = [
 		{
 			author: "Emily",
@@ -42,4 +42,4 @@
 
 		document.querySelector(".reviews__right").appendChild(reviewDiv);
 	});
-})();
+});

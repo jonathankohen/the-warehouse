@@ -9,6 +9,10 @@
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="stylesheet"
+			href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css"
+		/>
 		<link rel="stylesheet" href="../style.css" />
 		<title>The Warehouse</title>
 	</head>
@@ -18,10 +22,11 @@
 			<header>
 				<nav class="navbar navbar-expand-lg bg-body-tertiary">
 					<div class="container-fluid">
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand navbar__logo-link" href="#">
 							<img
 								src="../images/logos/logo-black.svg"
 								alt="The Warehouse"
+								class="navbar__logo"
 							/>
 						</a>
 						<button
@@ -67,176 +72,271 @@
 					</div>
 				</nav>
 			</header>
-			<section class="hero row">
-				<div class="hero__left col-4">
-					<img
-						class="hero__logo"
-						src="../images/logos/logo-white.svg"
-						alt="White Logo"
-					/>
-				</div>
-				<div class="hero__right col-8">
-					<img
-						class="apt-img"
-						src="../images/hero/hero.png"
-						alt="Picture of Apartment"
-					/>
-				</div>
-			</section>
-			<section class="ctas row">
-				<div class="cta col">
-					<h3>Explore the Warehouse</h3>
-					<div class="cta-btn-container">
-						<a class="cta-btn" href="/">Book an Appointment</a>
-					</div>
-				</div>
-				<div class="separator col">
-					<img
-						src="../images/misc/separator.svg"
-						alt="Vertical separator"
-					/>
-				</div>
-				<div class="cta col">
-					<h3>View our Collection</h3>
-					<div class="cta-btn-container">
-						<a class="cta-btn" href="/">Learn More</a>
-					</div>
-				</div>
-				<div class="separator col">
-					<img
-						src="../images/misc/separator.svg"
-						alt="Vertical separator"
-					/>
-				</div>
-				<div class="cta col">
-					<h3>How to Stay in Touch</h3>
-					<div class="cta-btn-container">
-						<a class="cta-btn" href="/">Contact Us</a>
+			<section class="hero">
+				<div class="row">
+					<div class="col">
+						<picture>
+							<source
+								media="(min-width:768px)"
+								srcset="../images/hero/desktop/hero.svg"
+							/>
+							<img
+								src="../images/hero/mobile/hero.svg"
+								alt="Flowers"
+							/>
+						</picture>
 					</div>
 				</div>
 			</section>
-			<section class="collections">
-				<div class="container">
+			<div class="mid-container container-fluid">
+				<section class="ctas">
 					<div class="row">
-						<div class="col">
+						<div class="cta col">
+							<h3>Explore the Warehouse</h3>
+							<div class="cta-btn-container">
+								<a class="cta-btn" href="/">
+									Book an Appointment
+								</a>
+							</div>
+						</div>
+						<div class="separator col">
 							<img
-								src="../images/collections/seating.svg"
-								alt="Seating Section"
-								class="collections__img"
-							/>
-							<img
-								src="../images/collections/rugs.svg"
-								alt="Rugs Section"
-								class="collections__img"
+								src="../images/misc/separator.svg"
+								alt="Vertical separator"
 							/>
 						</div>
-						<div class="col">
+						<div class="cta col">
+							<h3>View our Collection</h3>
+							<div class="cta-btn-container">
+								<a class="cta-btn" href="/">Learn More</a>
+							</div>
+						</div>
+						<div class="separator col">
 							<img
-								src="../images/collections/tables.svg"
-								alt="Tables Section"
-								class="collections__img"
-							/>
-							<img
-								src="../images/collections/storage.svg"
-								alt="Storage Section"
-								class="collections__img"
-							/>
-							<img
-								src="../images/collections/lighting.svg"
-								alt="Lighting Section"
-								class="collections__img"
+								src="../images/misc/separator.svg"
+								alt="Vertical separator"
 							/>
 						</div>
+						<div class="cta col">
+							<h3>How to Stay in Touch</h3>
+							<div class="cta-btn-container">
+								<a class="cta-btn" href="/">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="mobile-cta">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<h1 class="mobile-cta__h1">
+									Your Personal Curators of Vintage Furniture
+								</h1>
+								<div class="mobile-cta__btn-container">
+									<a class="mobile-cta__btn" href="#">
+										Book an Appointment
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="collections">
+					<div class="container">
+						<div class="row row-cols-1 row-cols-md-2">
+							<div class="col collections-col">
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											../images/collections/desktop/seating.svg
+										"
+									/>
+									<img
+										src="../images/collections/mobile/seating.svg"
+										alt="Seating Collection"
+										class="collections__img"
+									/>
+								</picture>
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											../images/collections/desktop/rugs.svg
+										"
+									/>
+									<img
+										src="../images/collections/mobile/rugs.svg"
+										alt="Rugs Collection"
+										class="collections__img"
+									/>
+								</picture>
+							</div>
+							<div class="col collections-col">
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											../images/collections/desktop/tables.svg
+										"
+									/>
+									<img
+										src="../images/collections/mobile/tables.svg"
+										alt="Tables Collection"
+										class="collections__img"
+									/>
+								</picture>
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											../images/collections/desktop/storage.svg
+										"
+									/>
+									<img
+										src="../images/collections/mobile/storage.svg"
+										alt="Storage Collection"
+										class="collections__img"
+									/>
+								</picture>
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											../images/collections/desktop/lighting.svg
+										"
+									/>
+									<img
+										src="../images/collections/mobile/lighting.svg"
+										alt="Lighting Collection"
+										class="collections__img"
+									/>
+								</picture>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="reviews">
+					<div class="row">
+						<div class="reviews__left col-4">
+							<h2 class="reviews__h2">
+								What Our Clients Are Saying About Us
+							</h2>
+							<div class="arrows">
+								<img
+									class="arro left-arrow"
+									src="../images/icons/left-arrow-disabled.svg"
+									alt="Left Arrow"
+								/>
+								<img
+									class="arrow right-arrow"
+									src="../images/icons/right-arrow-active.svg"
+									alt="Right Arrow"
+								/>
+							</div>
+							<div class="review__btn-container">
+								<a class="review__btn" href="/">
+									Leave a Review
+								</a>
+							</div>
+						</div>
+						<div
+							class="reviews__right col-8"
+							id="review-list"
+						></div>
+					</div>
+				</section>
+			</div>
+			<section class="showroom">
+				<div class="row">
+					<div class="showroom__left col-xs-12 col-md-4">
+						<img
+							src="../images/showroom/yellow-chair.png"
+							alt="Showroom Display"
+							id="yellow-chair"
+						/>
+					</div>
+					<div class="showroom__right col-xs-12 col-md-8">
+						<h2 class="showroom__h2">Visit Our Showroom</h2>
+						<h3 class="showroom__h3">
+							Conveniently located about 30 minutes outside of
+							Boston
+						</h3>
+						<a href="/" class="showroom__btn">
+							Book an Appointment
+						</a>
 					</div>
 				</div>
 			</section>
-
-			<section class="reviews row">
-				<div class="reviews__left col-4">
-					<h2 class="reviews__h2">
-						What Our Clients Are Saying About Us
-					</h2>
-					<div class="arrows">
-						<img
-							class="arro left-arrow"
-							src="../images/icons/left-arrow-disabled.svg"
-							alt="Left Arrow"
-						/>
-						<img
-							class="arrow right-arrow"
-							src="../images/icons/right-arrow-active.svg"
-							alt="Right Arrow"
-						/>
+			<div class="container-fluid">
+				<section class="mailing-list">
+					<div class="container">
+						<div class="row">
+							<div
+								class="col d-flex flex-column align-items-center"
+							>
+								<h2 class="mailing-list__title">
+									Be in the Know
+								</h2>
+								<p class="mailing-list__paragraph">
+									Join our mailing list to find out about new
+									arrivals, sales, exclusive offers, & more
+								</p>
+								<div
+									class="mailing-list__form-container d-flex flex-column align-items-center"
+								>
+									<!-- TODO: [] - Figure out mailing list stuff. -->
+									<form action="" class="mailing-list__form">
+										<div class="row">
+											<div class="col-xs-12 col-md-8">
+												<input
+													class="mailing-list__email-input"
+													type="email"
+													placeholder="enter email address"
+												/>
+											</div>
+											<div class="col-xs-12 col-md-4">
+												<input
+													class="mailing-list__submit-btn"
+													type="submit"
+													value="Sign Up"
+												/>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="mailing-list__icons">
+									<a href="/">
+										<img
+											src="../images/icons/facebook.svg"
+											alt="Facebook Icon"
+										/>
+									</a>
+									<a href="/">
+										<img
+											src="../images/icons/instagram.svg"
+											alt="Instagram Icon"
+										/>
+									</a>
+									<a href="/">
+										<img
+											src="../images/icons/pinterest.svg"
+											alt="Pinterest Icon"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="review__btn-container">
-						<a class="review__btn" href="/">Leave a Review</a>
-					</div>
-				</div>
-				<div class="reviews__right col-8" id="review-list"></div>
-			</section>
-			<section class="showroom row">
-				<div class="showroom__left col-8">
-					<img
-						src="../images/showroom/yellow-chair.png"
-						alt="Showroom Display"
-					/>
-				</div>
-				<div class="showroom__right col-4">
-					<h2 class="showroom__h2">Visit Our Showroom</h2>
-					<h3 class="showroom__h3">
-						Conveniently located about 30 minutes outside of Boston
-					</h3>
-					<a href="/" class="showroom__btn">Book an Appointment</a>
-				</div>
-			</section>
-			<section class="mailing-list">
-				<h2 class="mailing-list__title">Be in the Know</h2>
-				<p class="mailing-list__paragraph">
-					Join our mailing list to find out about new arrivals, sales,
-					exclusive offers, & more
-				</p>
-				<div class="mailing-list__form-container">
-					<!-- TODO: [] - Figure out mailing list stuff. -->
-					<form action="" class="mailing-list__form">
-						<input
-							class="mailing-list__email-input"
-							type="email"
-							placeholder="enter email address"
-						/>
-						<input
-							class="mailing-list__submit-btn"
-							type="submit"
-							value="Sign Up"
-						/>
-					</form>
-				</div>
-				<div class="mailing-list__icons">
-					<a href="/">
-						<img
-							src="../images/icons/facebook.svg"
-							alt="Facebook Icon"
-						/>
-					</a>
-					<a href="/">
-						<img
-							src="../images/icons/instagram.svg"
-							alt="Instagram Icon"
-						/>
-					</a>
-					<a href="/">
-						<img
-							src="../images/icons/pinterest.svg"
-							alt="Pinterest Icon"
-						/>
-					</a>
-				</div>
-			</section>
+				</section>
+			</div>
 		</main>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="../index.js"></script>
 	</body>
 </html>

@@ -1,12 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-/* font-family: 'Bebas Neue', sans-serif;
-font-family: 'Bricolage Grotesque', sans-serif;
-font-family: 'Jost', sans-serif; */
-
-/* margin & gap = 24px */
 
 :root {
 	--white: rgb(244, 243, 241);
@@ -15,6 +7,8 @@ font-family: 'Jost', sans-serif; */
 	--black-75: rgba(24, 24, 24, 0.75);
 	--black-50: rgba(24, 24, 24, 0.5);
 	--gray: rgb(238, 238, 236);
+	--bebas: "Bebas Neue", "Jost", sans-serif;
+	--bric: "Bricolage Grotesque", "Jost", sans-serif;
 }
 
 * {
@@ -25,7 +19,7 @@ font-family: 'Jost', sans-serif; */
 
 h1,
 h2 {
-	font-family: "Bebas Neue", sans-serif;
+	font-family: var(--bebas);
 	color: var(--white);
 	font-weight: normal;
 }
@@ -39,7 +33,7 @@ h2 {
 }
 
 h3 {
-	font-family: "Bebas Neue", sans-serif;
+	font-family: var(--bebas);
 	font-size: 28px;
 	font-weight: normal;
 }
@@ -55,24 +49,23 @@ a {
 	font-weight: 600;
 }
 
+input {
+	max-width: 100%;
+}
+
+.main-container {
+	overflow: auto;
+}
+
 .navbar {
 	background: rgba(249, 249, 248, 0.75);
 	backdrop-filter: blur(20px);
 }
 
-.navbar__logo {
-	font-family: "Bebas Neue", sans-serif;
-	font-size: 32px;
-	font-weight: normal;
-	color: var(--black);
-	font-style: normal;
-	line-height: normal;
-}
-
 .navbar__link {
 	color: var(--black-50);
 	text-align: center;
-	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: var(--bric);
 	font-size: 1rem;
 	font-style: normal;
 	font-weight: 600;
@@ -81,7 +74,7 @@ a {
 }
 
 .navbar__btn {
-	font-family: "Bebas Neue", sans-serif;
+	font-family: var(--bebas);
 	background-color: var(--black);
 	color: var(--wh-white);
 	padding: 0.875rem 2rem;
@@ -91,7 +84,8 @@ a {
 }
 
 .hero {
-	/* display: flex; */
+	display: flex;
+	justify-content: center;
 }
 
 .hero__logo {
@@ -116,12 +110,6 @@ a {
 	margin: 0 1em 0.75em !important;
 }
 
-.bull {
-	width: 4px;
-	height: 4px;
-	margin: 0 6px;
-}
-
 .ctas {
 	padding: 2rem;
 }
@@ -142,7 +130,7 @@ a {
 	text-decoration: none;
 	color: var(--black);
 	text-align: center;
-	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: var(--bric);
 	font-style: normal;
 	font-weight: 600;
 	line-height: 155%; /* 1.55rem */
@@ -151,17 +139,42 @@ a {
 	white-space: nowrap;
 }
 
+.mobile-cta {
+	display: none;
+}
+
+.mobile-cta__h1 {
+	color: var(--black);
+	font-family: var(--bebas);
+	font-size: 2.1rem;
+	font-style: normal;
+	line-height: 124%; /* 3.255rem */
+}
+
+.mobile-cta__btn {
+	height: 3.25rem;
+	padding: 0.625rem 2rem;
+	border-radius: 0.25rem;
+	background: var(--black);
+	color: #f9f9f8;
+	font-family: var(--bric);
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.55rem;
+}
+
 .separator {
 	height: 151px;
 	color: var(--black-50);
 	text-align: center;
 }
 
-.collections {
+.collections-col {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
-	padding: 0 5.5rem;
 }
 
 .collections__img {
@@ -175,35 +188,15 @@ a {
 }
 
 .collections__overlay-text {
-	font-family: "Bebas Neue", sans-serif;
+	font-family: var(--bebas);
 	font-size: 38px;
 	font-weight: normal;
 	color: var(--white);
 	position: absolute;
 }
 
-.top-left {
-	top: 24px;
-	left: 24px;
-}
-
-.top-right {
-	top: 24px;
-	right: 24px;
-}
-
-.bottom-left {
-	bottom: 24px;
-	left: 24px;
-}
-
-.bottom-right {
-	bottom: 24px;
-	right: 24px;
-}
-
-.showroom {
-	display: flex;
+#yellow-chair {
+	max-width: fit-content;
 }
 
 .showroom__left {
@@ -223,7 +216,7 @@ a {
 
 .showroom__h2 {
 	color: rgb(249, 249, 248);
-	font-family: "Bebas Neue", sans-serif;
+	font-family: var(--bebas);
 	font-size: 3.6875rem;
 	font-style: normal;
 	font-weight: 400;
@@ -234,7 +227,7 @@ a {
 
 .showroom__h3 {
 	color: #f9f9f8;
-	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: var(--bric);
 	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 400;
@@ -250,6 +243,7 @@ a {
 	border-radius: 0.25rem;
 	border: 2px solid #f9f9f8;
 	margin: 1.75rem 0;
+	white-space: nowrap;
 }
 
 .mailing-list {
@@ -270,7 +264,7 @@ a {
 .mailing-list__paragraph {
 	color: var(--black);
 	text-align: center;
-	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: var(--bric);
 	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 300;
@@ -281,7 +275,7 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 2rem;
+	margin: 2rem 0;
 }
 
 .mailing-list__email-input {
@@ -289,6 +283,7 @@ a {
 	padding: 1.03125rem 2rem;
 	border-radius: 0.25rem;
 	border: 2px solid rgba(24, 24, 24, 0.75);
+	margin-bottom: 1.3rem;
 }
 
 .mailing-list__email-input:focus,
@@ -298,14 +293,20 @@ a {
 }
 
 .mailing-list__submit-btn {
-	display: flex;
 	height: 3.25rem;
 	padding: 0.625rem 2rem;
-	justify-content: center;
-	align-items: center;
-	gap: 0.5rem;
 	border-radius: 0.25rem;
 	background: var(--black);
+	color: #f9f9f8;
+	font-family: var(--bric);
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.55rem;
+}
+
+.mailing-list__icons {
+	display: flex;
 }
 
 .reviews {
@@ -327,7 +328,7 @@ a {
 
 .reviews__h2 {
 	color: var(--black);
-	font-family: "Bebas Neue", sans-serif;
+	font-family: var(--bebas);
 	font-size: 2.4375rem;
 	font-style: normal;
 	font-weight: 400;
@@ -351,7 +352,7 @@ a {
 
 .review__author {
 	color: var(--black);
-	font-family: "Bebas Neue", sans-serif;
+	font-family: var(--bebas);
 	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 400;
@@ -373,7 +374,7 @@ a {
 	text-decoration: none;
 	color: var(--black);
 	text-align: center;
-	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: var(--bric);
 	font-style: normal;
 	font-weight: 600;
 	line-height: 155%; /* 1.55rem */
@@ -382,20 +383,67 @@ a {
 	white-space: nowrap;
 }
 
-/* @media screen and (max-width: 1024px) {
-	.hero__left {
-		display: none !important;
-	}
-} */
-
-/* @media only screen and (max-width: 768px) {
-	.showroom__right {
-		display: none !important;
-	}
-} */
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.navbar__logo-link {
+		padding-left: 0 !important;
+	}
+
+	.navbar__logo {
+		width: 7rem;
+		padding-left: 1.5rem !important;
+	}
+
+	.hero {
+		margin-bottom: 1.7rem;
+	}
+
+	.ctas {
+		display: none !important;
+	}
+
+	.mobile-cta {
+		display: flex;
+		margin-bottom: 2rem;
+	}
+
+	.mailing-list__email-input,
+	.mailing-list__submit-btn,
+	.mobile-cta__btn {
+		width: 100% !important;
+	}
+
+	.mobile-cta__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		/* margin: 1.7rem 1.5rem 2.5rem; */
+	}
+
+	.reviews {
+		display: none !important;
+	}
+
+	.showroom {
+		text-align: center !important;
+	}
+
+	.showroom__left {
+		display: none !important;
+	}
+
+	.showroom__right {
+		padding: 5rem 1.5rem !important;
+	}
+
+	.showroom__h2 {
+		font-size: 2rem !important;
+	}
+
+	.mailing-list {
+		padding: 2rem 0 2rem !important;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -404,14 +452,6 @@ a {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	.showroom__right {
-		padding: 3.5rem;
-	}
-
-	.showroom__h2 {
-		font-size: 2.4375rem;
-		white-space: normal;
-	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -421,3 +461,7 @@ a {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 }
+
+/* Medium devices (landscape tablets, 768px and DOWN) */
+/* @media only screen and (max-width: 768px) {
+} */
