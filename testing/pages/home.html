@@ -9,22 +9,17 @@
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
-		<link
-			rel="stylesheet"
-			href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css"
-		/>
 		<link rel="stylesheet" href="../style.css" />
 		<title>The Warehouse</title>
 	</head>
 	<body>
-		<!-- test -->
 		<main class="main-container">
 			<header>
-				<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<nav class="navbar navbar-expand-lg">
 					<div class="container-fluid">
 						<a class="navbar-brand navbar__logo-link" href="#">
 							<img
-								src="../images/logos/logo-black.svg"
+								src="../images/logos/short-logo-black.svg"
 								alt="The Warehouse"
 								class="navbar__logo"
 							/>
@@ -49,13 +44,16 @@
 									<a
 										class="nav-link navbar__link"
 										aria-current="page"
-										href="#"
+										href="./home.html"
 									>
 										Collections
 									</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link navbar__link" href="#">
+									<a
+										class="nav-link navbar__link"
+										href="./about.html"
+									>
 										About
 									</a>
 								</li>
@@ -73,54 +71,52 @@
 				</nav>
 			</header>
 			<section class="hero">
-				<div class="row">
-					<div class="col">
-						<picture>
-							<source
-								media="(min-width:768px)"
-								srcset="../images/hero/desktop/hero.svg"
-							/>
-							<img
-								src="../images/hero/mobile/hero.svg"
-								alt="Flowers"
-							/>
-						</picture>
-					</div>
-				</div>
+				<picture>
+					<source
+						media="(min-width:768px)"
+						srcset="../images/hero/desktop/hero.svg"
+					/>
+					<img
+						src="../images/hero/mobile/hero.svg"
+						alt="Hero Image"
+					/>
+				</picture>
 			</section>
 			<div class="mid-container container-fluid">
 				<section class="ctas">
-					<div class="row">
-						<div class="cta col">
-							<h3>Explore the Warehouse</h3>
-							<div class="cta-btn-container">
-								<a class="cta-btn" href="/">
-									Book an Appointment
-								</a>
+					<div class="container">
+						<div class="row">
+							<div class="cta cta-left col">
+								<h3>Explore the Warehouse</h3>
+								<div class="cta-btn-container">
+									<a class="cta-btn" href="/">
+										Book an Appointment
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="separator col">
-							<img
-								src="../images/misc/separator.svg"
-								alt="Vertical separator"
-							/>
-						</div>
-						<div class="cta col">
-							<h3>View our Collection</h3>
-							<div class="cta-btn-container">
-								<a class="cta-btn" href="/">Learn More</a>
+							<div class="separator col">
+								<img
+									src="../images/misc/separator.svg"
+									alt="Vertical separator"
+								/>
 							</div>
-						</div>
-						<div class="separator col">
-							<img
-								src="../images/misc/separator.svg"
-								alt="Vertical separator"
-							/>
-						</div>
-						<div class="cta col">
-							<h3>How to Stay in Touch</h3>
-							<div class="cta-btn-container">
-								<a class="cta-btn" href="/">Contact Us</a>
+							<div class="cta cta-middle col">
+								<h3>View our Collection</h3>
+								<div class="cta-btn-container">
+									<a class="cta-btn" href="/">Learn More</a>
+								</div>
+							</div>
+							<div class="separator col">
+								<img
+									src="../images/misc/separator.svg"
+									alt="Vertical separator"
+								/>
+							</div>
+							<div class="cta cta-right col">
+								<h3>How to Stay in Touch</h3>
+								<div class="cta-btn-container">
+									<a class="cta-btn" href="/">Contact Us</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -217,33 +213,34 @@
 					</div>
 				</section>
 				<section class="reviews">
-					<div class="row">
-						<div class="reviews__left col-4">
-							<h2 class="reviews__h2">
-								What Our Clients Are Saying About Us
-							</h2>
-							<div class="arrows">
-								<img
-									class="arro left-arrow"
-									src="../images/icons/left-arrow-disabled.svg"
-									alt="Left Arrow"
-								/>
-								<img
-									class="arrow right-arrow"
-									src="../images/icons/right-arrow-active.svg"
-									alt="Right Arrow"
-								/>
+					<div class="container">
+						<div class="row">
+							<div class="reviews__left col-4">
+								<h2 class="reviews__h2">
+									What Our Clients Are Saying About Us
+								</h2>
+								<div class="reviews__arrows">
+									<img
+										class="reviews__arrow"
+										id="reviews__left-arrow"
+										src="../images/icons/left-arrow-disabled.svg"
+										alt="Left Arrow"
+									/>
+									<img
+										class="arrow right-arrow"
+										id="reviews__right-arrow"
+										src="../images/icons/right-arrow-active.svg"
+										alt="Right Arrow"
+									/>
+								</div>
+								<div class="review__btn-container">
+									<a class="review__btn" href="/">
+										Leave a Review
+									</a>
+								</div>
 							</div>
-							<div class="review__btn-container">
-								<a class="review__btn" href="/">
-									Leave a Review
-								</a>
-							</div>
+							<div class="reviews__list col-8"></div>
 						</div>
-						<div
-							class="reviews__right col-8"
-							id="review-list"
-						></div>
 					</div>
 				</section>
 			</div>
@@ -330,7 +327,122 @@
 					</div>
 				</section>
 			</div>
+			<footer class="footer">
+				<div class="row footer__top">
+					<div class="col">
+						<img
+							src="../images/logos/logo-black.svg"
+							alt="The Warehouse"
+							class="footer__logo"
+						/>
+					</div>
+					<div class="col">
+						<p class="small">Copyright 2023 The Warehouse</p>
+					</div>
+					<div class="col footer__socials">
+						<div class="row">
+							<div class="col">
+								<a href="/">
+									<img
+										src="../images/icons/facebook.svg"
+										alt="Facebook Icon"
+										class="footer__icon"
+									/>
+								</a>
+							</div>
+							<div class="col">
+								<a href="/">
+									<img
+										src="../images/icons/instagram.svg"
+										alt="Instagram Icon"
+										class="footer__icon"
+									/>
+								</a>
+							</div>
+							<div class="col">
+								<a href="/">
+									<img
+										src="../images/icons/pinterest.svg"
+										alt="Pinterest Icon"
+										class="footer__icon"
+									/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row hr-container">
+					<div class="col">
+						<hr class="footer__hr" />
+					</div>
+				</div>
+				<div class="row footer__bottom">
+					<div class="col footer__links">
+						<div class="row row-cols-3">
+							<div class="col flex-nowrap">
+								<a href="#" class="footer__link small">
+									Seating
+								</a>
+								<a href="#" class="footer__link small">
+									Tables
+								</a>
+								<a href="#" class="footer__link small">
+									Storage
+								</a>
+							</div>
+							<div class="col flex-nowrap">
+								<a href="#" class="footer__link small">
+									Lighting
+								</a>
+								<a href="#" class="footer__link small">Rugs</a>
+								<a href="#" class="footer__link small">Art</a>
+							</div>
+							<div class="col flex-nowrap">
+								<a href="#" class="footer__link small">Decor</a>
+							</div>
+						</div>
+					</div>
+					<div class="col footer__address">
+						<p class="small">3 Post office Square Acton MA 01720</p>
+						<a
+							href="mailto:info@thewarehousevintage.com"
+							class="small"
+						>
+							info@thewarehousevintage.com
+						</a>
+					</div>
+					<div class="col footer__cta">
+						<button class="btn navbar__btn" type="submit">
+							Book an Appointment
+						</button>
+						<p class="small">Tues-Sat 10-1 By Appointment Only</p>
+					</div>
+				</div>
+			</footer>
 		</main>
+		<script type="module">
+			// Import the functions you need from the SDKs you need
+			import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js';
+			import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js';
+			// TODO: Add SDKs for Firebase products that you want to use
+			// https://firebase.google.com/docs/web/setup#available-libraries
+
+			// Your web app's Firebase configuration
+			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+			const firebaseConfig = {
+				apiKey: 'AIzaSyCfVXtVifwOkvzTOGt5m0nabrIE8UcrfJ8',
+				authDomain: 'the-warehouse-6f2f3.firebaseapp.com',
+				projectId: 'the-warehouse-6f2f3',
+				storageBucket: 'the-warehouse-6f2f3.appspot.com',
+				messagingSenderId: '1052101720928',
+				appId: '1:1052101720928:web:a8cfe512e05b8df4e73c05',
+				measurementId: 'G-T6EZMK07NK',
+			};
+
+			// Initialize Firebase
+			const app = initializeApp(firebaseConfig);
+			const analytics = getAnalytics(app);
+		</script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
