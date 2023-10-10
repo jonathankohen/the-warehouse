@@ -6,24 +6,23 @@ To-Do:
 
 Tablet version: scale down CTA
 
+Tablet: CTAs should be visible
+Animation:
+	- Center middle fade out
+	- Text no change
+
 */
 
 :root {
 	--display: 'Bebas Neue', 'Jost', sans-serif;
 	--body: 'Bricolage Grotesque', 'Jost', sans-serif;
+	--white: #f9f9f8;
 	--black: #181818;
+	--dark-grey: #eeeeec;
+	--light-grey: #f5f4f2;
 	--black-75: #181818bf;
 	--black-50: #18181880;
-	--light-gray: #f5f4f2;
-	--white: #f4f3f1;
-	--wh-white: #f9f9f8;
-	--gray: #eeeeec;
-	--terr-1: #b05d3e;
-	--terr-2: #a5654d;
-	--blue: #3c4956;
-	--green: #647162;
-	--yellow: #efca46;
-	--brown: #493c35;
+	--br: 0.25rem;
 }
 
 * {
@@ -50,30 +49,45 @@ h6,
 }
 
 h1,
-h2 {
+h2,
+h3 {
 	font-family: var(--display);
 	color: var(--white);
 }
 
-h1 {
+/* h1 {
 	font-size: 3rem;
-}
+} */
 
 h2 {
-	/* font-size: 1.19rem; */
-
 	color: var(--black);
 	font-family: var(--display);
-	font-size: 2.4375rem;
-	font-style: normal;
+	font-size: 3.75rem;
 	font-weight: 400;
 	line-height: 111.023%; /* 2.70619rem */
 }
 
 h3 {
 	font-family: var(--display);
-	font-size: 1.75rem;
+	color: var(--black);
+	font-size: 3rem;
 	font-weight: normal;
+}
+
+h4 {
+	font-size: 2.375rem;
+}
+
+h5 {
+	font-size: 2rem;
+}
+
+h6 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-family: var(--body);
 }
 
 img {
@@ -81,14 +95,28 @@ img {
 }
 
 a {
+	font-size: 1rem;
+	font-weight: 600;
 	padding: 1rem 2rem;
 	text-decoration: none;
 	color: var(--white);
-	font-weight: 600;
 }
 
 input {
 	max-width: 100%;
+}
+
+button {
+	padding: 0.75rem 2rem;
+	border-radius: var(--br);
+}
+
+.btn-text {
+	color: var(--white);
+	font-family: var(--body);
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 182.023%; /* 1.82025rem */
 }
 
 .small {
@@ -99,27 +127,26 @@ input {
 	line-height: 257.023%; /* 2.57025rem */
 }
 
-/* .black-solid-btn {
-	height: 3.25rem;
-	padding: 0.625rem 2rem;
-	border-radius: 0.25rem;
-	background: var(--black);
-	color: #f9f9f8;
+.outline-btn {
 	font-family: var(--body);
-	font-size: 1rem;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 1.55rem;
+	border: 2px solid var(--black);
 }
 
-.white-solid-btn {
-	display: flex;
-	width: 21.375rem;
-	padding: 1rem 0.5rem;
-	justify-content: center;
-	align-items: center;
-	gap: 0.5rem;
-} */
+.solid-black-btn {
+	font-family: var(--display);
+	padding: 0.875rem 2rem;
+	color: var(--white);
+}
+
+.solid-appt-btn {
+	font-family: var(--display);
+	padding: 0.875rem 2rem;
+	font-size: 1.25rem;
+}
+
+.sign-up-btn {
+	background-color: var(--black);
+}
 
 .main-container {
 	overflow: auto;
@@ -155,7 +182,7 @@ input {
 .navbar__btn {
 	font-family: var(--display);
 	background-color: var(--black);
-	color: var(--wh-white);
+	color: var(--white);
 	padding: 0.875rem 2rem;
 	border-radius: 0.25rem;
 	font-size: 1.25rem;
@@ -216,6 +243,16 @@ input {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
+}
+
+.cta-h3 {
+	color: var(--black);
+	font-family: var(--display);
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 111.023%; /* 2.70619rem */
+	text-align: center;
 }
 
 .cta-btn-container {
