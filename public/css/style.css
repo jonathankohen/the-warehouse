@@ -4,9 +4,9 @@
 
 To-Do:
 
-Tablet version: scale down CTA
+Responsive design:
+	-  Make CTA buttons visible and scale them down
 
-Tablet: CTAs should be visible
 Animation:
 	- Center middle fade out
 	- Text no change
@@ -33,6 +33,10 @@ Animation:
 
 html {
 	font-size: 1rem;
+}
+
+.hidden {
+	display: none;
 }
 
 h1,
@@ -161,6 +165,7 @@ button {
 	z-index: 1000000;
 	top: 0;
 	padding: 1.5rem 0;
+	margin-bottom: 2rem;
 }
 
 .navbar__logo {
@@ -526,6 +531,45 @@ button {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 157%; /* 3.14rem */
+}
+
+.faq {
+	color: var(--black);
+	background-color: var(--dark-grey);
+	border-radius: 0.25rem;
+	padding: 2rem 2rem 1.5rem 2rem;
+	margin: 2rem 0;
+}
+
+.faq__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.faq__question {
+	list-style: none !important;
+	color: var(--black);
+	font-family: var(--display);
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.faq__text {
+	font-family: var(--body);
+	font-size: 1rem;
+	color: var(--black);
+	font-family: var(--body);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 2rem 0 1rem 0;
+}
+
+.faq-arrow {
+	width: 2rem;
+	height: 0.5rem;
 }
 
 .footer {

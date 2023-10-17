@@ -43,7 +43,12 @@ $(document).ready(function () {
 		$('.reviews__list').append(reviewDiv);
 	}
 
-	// card getting smaller and disappearing
+	const leftActive = () => {
+		$('#reviews__left-arrow').attr(
+			'src',
+			'./images/icons/left-arrow-active.svg',
+		);
+	};
 
 	const nextReview = () => {
 		let firstReview = $('.reviews__list').children().first();
@@ -64,10 +69,24 @@ $(document).ready(function () {
 	};
 
 	$('#reviews__right-arrow').click(function () {
+		leftActive();
 		nextReview();
 	});
 
 	$('#reviews__left-arrow').click(function () {
+		leftActive();
 		prevReview();
+	});
+
+	$('.faq__text').hide();
+
+	$('.faq__question').click(function () {
+		$(this).parent().siblings().slideToggle('slow');
+
+		if ($(this).next().attr('src') === '../images/icons/down-arrow.svg') {
+			$(this).next().attr('src', '../images/icons/up-arrow.svg');
+		} else {
+			$(this).next().attr('src', '../images/icons/down-arrow.svg');
+		}
 	});
 });
