@@ -61,310 +61,357 @@
 	</head>
 	<body>
 		<h1 class="hidden">The Warehouse Revive Redesign Reimagine</h1>
-		<main class="main-container">
-			<header>
-				<nav class="navbar navbar-expand-lg">
-					<div class="container-fluid">
-						<a class="navbar-brand navbar__logo-link" href="#">
-							<img
-								src="./images/logos/short-logo-black.svg"
-								alt="The Warehouse"
-								class="navbar__logo"
-							/>
-						</a>
-						<button
-							class="navbar-toggler"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#navbarSupportedContent"
-							aria-controls="navbarSupportedContent"
-							aria-expanded="false"
-							aria-label="Toggle navigation"
-						>
-							<span class="navbar-toggler-icon"></span>
+		<header>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<a class="navbar-brand navbar__logo-link" href="#">
+						<img
+							src="./images/logos/short-logo-black.svg"
+							alt="The Warehouse"
+							class="navbar__logo"
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a
+									class="nav-link navbar__link"
+									href="./pages/collections.html"
+								>
+									Collections
+								</a>
+							</li>
+							<li class="nav-item px-5">
+								<a
+									class="nav-link navbar__link"
+									href="./pages/about.html"
+								>
+									About
+								</a>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link navbar__link"
+									href="./pages/contact.html"
+								>
+									Contact
+								</a>
+							</li>
+						</ul>
+						<button class="btn navbar__btn" type="submit">
+							Book an Appointment
 						</button>
-						<div
-							class="collapse navbar-collapse"
-							id="navbarSupportedContent"
-						>
-							<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-								<li class="nav-item">
-									<a
-										class="nav-link navbar__link"
-										aria-current="page"
-										href="./pages/home.html"
-									>
-										Collections
-									</a>
-								</li>
-								<li class="nav-item px-5">
-									<a
-										class="nav-link navbar__link"
-										href="./pages/about.html"
-									>
-										About
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link navbar__link" href="#">
-										Contact
-									</a>
-								</li>
-							</ul>
-							<button class="btn navbar__btn" type="submit">
-								Book an Appointment
-							</button>
-						</div>
 					</div>
-				</nav>
-			</header>
-			<section class="hero">
-				<picture>
-					<source
-						media="(min-width:768px)"
-						srcset="./images/hero/desktop/hero.svg"
-					/>
-					<img src="./images/hero/mobile/hero.svg" alt="Hero Image" />
-				</picture>
-			</section>
-			<section class="mid-container container-fluid">
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="main-container container">
+				<section class="hero">
+					<picture>
+						<source
+							media="(min-width:768px)"
+							srcset="./images/hero/desktop/hero.svg"
+						/>
+						<img
+							src="./images/hero/mobile/hero.svg"
+							alt="Hero Image"
+						/>
+					</picture>
+				</section>
 				<section class="ctas">
-					<div class="container">
-						<div class="row">
-							<div class="cta cta-left col">
-								<h3 class="cta-h3">Explore the Warehouse</h3>
-								<div class="cta-btn-container">
-									<a class="cta-btn" href="/">
-										Book an Appointment
-									</a>
+					<div class="row d-flex align-items-center">
+						<div class="cta cta-left col-6">
+							<h2>Your Personal curators of vintage furniture</h2>
+						</div>
+						<div class="cta col-6">
+							<div class="row d-flex align-items-center">
+								<div class="col cta-col">
+									<h3 class="cta-h3">
+										Explore the Warehouse
+									</h3>
+									<div class="cta-btn-container">
+										<a
+											class="cta-btn"
+											href="./pages/contact.html"
+										>
+											Book an Appointment
+										</a>
+									</div>
 								</div>
-							</div>
-							<div class="separator col">
-								<img
-									src="./images/misc/separator.svg"
-									alt="Vertical separator"
-								/>
-							</div>
-							<div class="cta cta-middle col">
-								<h3 class="cta-h3">View our Collection</h3>
-								<div class="cta-btn-container">
-									<a class="cta-btn" href="/">Learn More</a>
+								<div class="separator col">
+									<img
+										src="./images/misc/separator.svg"
+										alt="Vertical separator"
+									/>
 								</div>
-							</div>
-							<div class="separator col">
-								<img
-									src="./images/misc/separator.svg"
-									alt="Vertical separator"
-								/>
-							</div>
-							<div class="cta cta-right col">
-								<h3 class="cta-h3">How to Stay in Touch</h3>
-								<div class="cta-btn-container">
-									<a class="cta-btn" href="/">Contact Us</a>
+								<div class="col cta-col">
+									<h3 class="cta-h3">View our Collection</h3>
+									<div class="cta-btn-container">
+										<a class="cta-btn" href="/">
+											Learn More
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
 				<section class="mobile-cta">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<h1 class="mobile-cta__h1">
-									Your Personal Curators of Vintage Furniture
-								</h1>
-								<div class="mobile-cta__btn-container">
-									<a class="mobile-cta__btn" href="#">
-										Book an Appointment
-									</a>
-								</div>
+					<div class="row">
+						<div class="col">
+							<h1 class="mobile-cta__h1">
+								Your Personal Curators of Vintage Furniture
+							</h1>
+							<div class="mobile-cta__btn-container">
+								<a class="mobile-cta__btn" href="#">
+									Book an Appointment
+								</a>
 							</div>
 						</div>
 					</div>
 				</section>
 				<section class="collections">
-					<div class="container">
-						<div class="row row-cols-1 row-cols-md-2">
-							<div class="col collections-col">
-								<picture>
-									<source
-										media="(min-width:768px)"
-										srcset="
-											./images/collections/desktop/seating.svg
-										"
-									/>
-									<img
-										src="./images/collections/mobile/seating.svg"
-										alt="Seating Collection"
-										class="collections__img"
-									/>
-								</picture>
-								<picture>
-									<source
-										media="(min-width:768px)"
-										srcset="
-											./images/collections/desktop/rugs.svg
-										"
-									/>
-									<img
-										src="./images/collections/mobile/rugs.svg"
-										alt="Rugs Collection"
-										class="collections__img"
-									/>
-								</picture>
-							</div>
-							<div class="col collections-col">
-								<picture>
-									<source
-										media="(min-width:768px)"
-										srcset="
-											./images/collections/desktop/tables.svg
-										"
-									/>
-									<img
-										src="./images/collections/mobile/tables.svg"
-										alt="Tables Collection"
-										class="collections__img"
-									/>
-								</picture>
-								<picture>
-									<source
-										media="(min-width:768px)"
-										srcset="
-											./images/collections/desktop/storage.svg
-										"
-									/>
-									<img
-										src="./images/collections/mobile/storage.svg"
-										alt="Storage Collection"
-										class="collections__img"
-									/>
-								</picture>
-								<picture>
-									<source
-										media="(min-width:768px)"
-										srcset="
-											./images/collections/desktop/lighting.svg
-										"
-									/>
-									<img
-										src="./images/collections/mobile/lighting.svg"
-										alt="Lighting Collection"
-										class="collections__img"
-									/>
-								</picture>
-							</div>
+					<div class="row row-cols-1 row-cols-md-2">
+						<div class="col collections-col">
+							<!-- Seating -->
+							<picture>
+								<source
+									media="(min-width:768px)"
+									srcset="
+										./images/collections/desktop/seating.svg
+									"
+								/>
+								<img
+									src="./images/collections/mobile/seating.svg"
+									alt="Seating Collection"
+									class="collections-section__img"
+									onclick="location.href='./pages/collection/seating.html';"
+								/>
+							</picture>
+							<!-- Rugs -->
+							<picture>
+								<source
+									media="(min-width:768px)"
+									srcset="
+										./images/collections/desktop/rugs.svg
+									"
+								/>
+								<img
+									src="./images/collections/mobile/rugs.svg"
+									alt="Rugs Collection"
+									class="collections-section__img"
+									onclick="location.href='./pages/collection/rugs.html';"
+								/>
+							</picture>
+						</div>
+						<div class="col collections-col">
+							<!-- Tables -->
+							<picture>
+								<source
+									media="(min-width:768px)"
+									srcset="
+										./images/collections/desktop/tables.svg
+									"
+								/>
+								<img
+									src="./images/collections/mobile/tables.svg"
+									alt="Tables Collection"
+									class="collections-section__img"
+									onclick="location.href='./pages/collection/tables.html';"
+								/>
+							</picture>
+							<!-- Storage -->
+							<picture>
+								<source
+									media="(min-width:768px)"
+									srcset="
+										./images/collections/desktop/storage.svg
+									"
+								/>
+								<img
+									src="./images/collections/mobile/storage.svg"
+									alt="Storage Collection"
+									class="collections-section__img"
+									onclick="location.href='./pages/collection/storage.html';"
+								/>
+							</picture>
+							<!-- Lighting -->
+							<picture>
+								<source
+									media="(min-width:768px)"
+									srcset="
+										./images/collections/desktop/lighting.svg
+									"
+								/>
+								<img
+									src="./images/collections/mobile/lighting.svg"
+									alt="Lighting Collection"
+									class="collections-section__img"
+									onclick="location.href='./pages/collection/lighting.html';"
+								/>
+							</picture>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-md-8 collections-col">
+							<!-- Art -->
+							<picture>
+								<source
+									media="(min-width:768px)"
+									srcset="
+										./images/collections/desktop/art.svg
+									"
+								/>
+								<img
+									src="./images/collections/mobile/art.svg"
+									alt="Art Collection"
+									class="collections-section__img collections-section__img-bottom"
+									onclick="location.href='./pages/collection/art.html';"
+								/>
+							</picture>
+						</div>
+						<div class="col-xs-12 col-md-4 collections-col">
+							<!-- Misc. -->
+							<picture>
+								<source
+									media="(min-width:768px)"
+									srcset="
+										./images/collections/desktop/misc.svg
+									"
+								/>
+								<img
+									src="./images/collections/mobile/misc.svg"
+									alt="Misc. Collection"
+									class="collections-section__img collections-section__img-bottom"
+									onclick="location.href='./pages/collection/misc.html';"
+								/>
+							</picture>
 						</div>
 					</div>
 				</section>
 				<section class="reviews">
-					<div class="container">
-						<div class="row">
-							<div class="reviews__left col-4">
-								<h2 class="reviews__h2">
-									What Our Clients Are Saying About Us
-								</h2>
-								<div class="reviews__arrows">
-									<img
-										class="reviews__arrow"
-										id="reviews__left-arrow"
-										src="./images/icons/left-arrow-disabled.svg"
-										alt="Left Arrow"
-									/>
-									<img
-										class="arrow right-arrow"
-										id="reviews__right-arrow"
-										src="./images/icons/right-arrow-active.svg"
-										alt="Right Arrow"
-									/>
-								</div>
-								<div class="review__btn-container">
-									<a class="review__btn" href="/">
-										Leave a Review
-									</a>
-								</div>
+					<div class="row">
+						<div class="reviews__left col-4">
+							<h2 class="reviews__h2">
+								What Our Clients Are Saying About Us
+							</h2>
+							<div class="reviews__arrows">
+								<img
+									class="reviews__arrow"
+									id="reviews__left-arrow"
+									src="./images/icons/left-arrow-disabled.svg"
+									alt="Left Arrow"
+								/>
+								<img
+									class="arrow right-arrow"
+									id="reviews__right-arrow"
+									src="./images/icons/right-arrow-active.svg"
+									alt="Right Arrow"
+								/>
 							</div>
-							<div class="reviews__list col-8"></div>
+							<div class="review__btn-container">
+								<a class="review__btn" href="/">
+									Leave a Review
+								</a>
+							</div>
+						</div>
+						<div class="reviews__list col-8"></div>
+					</div>
+				</section>
+				<section class="showroom">
+					<div class="row">
+						<div class="showroom__left col-xs-12 col-md-4">
+							<img
+								src="./images/showroom/yellow-chair.png"
+								alt="Showroom Display"
+								id="yellow-chair"
+							/>
+						</div>
+						<div class="showroom__right col-xs-12 col-md-8">
+							<h2 class="showroom__h2">Visit Our Showroom</h2>
+							<h3 class="showroom__h3">
+								Conveniently located about 30 minutes outside of
+								Boston
+							</h3>
+							<a href="/" class="showroom__btn">
+								Book an Appointment
+							</a>
 						</div>
 					</div>
 				</section>
-			</section>
-			<section class="showroom">
-				<div class="row">
-					<div class="showroom__left col-xs-12 col-md-4">
-						<img
-							src="./images/showroom/yellow-chair.png"
-							alt="Showroom Display"
-							id="yellow-chair"
-						/>
-					</div>
-					<div class="showroom__right col-xs-12 col-md-8">
-						<h2 class="showroom__h2">Visit Our Showroom</h2>
-						<h3 class="showroom__h3">
-							Conveniently located about 30 minutes outside of
-							Boston
-						</h3>
-						<a href="/" class="showroom__btn">
-							Book an Appointment
-						</a>
-					</div>
-				</div>
-			</section>
-			<section class="mailing-list container-fluid">
-				<div class="row">
-					<div class="col d-flex flex-column align-items-center">
-						<h2 class="mailing-list__title">Be in the Know</h2>
-						<p class="mailing-list__paragraph">
-							Join our mailing list to find out about new
-							arrivals, sales, exclusive offers, & more
-						</p>
-						<div
-							class="mailing-list__form-container d-flex flex-column align-items-center"
-						>
-							<!-- TODO: [] - Figure out mailing list stuff. -->
-							<form action="" class="mailing-list__form">
-								<div class="row">
-									<div class="col-xs-12 col-md-8">
-										<input
-											class="mailing-list__email-input"
-											type="email"
-											placeholder="enter email address"
-										/>
+				<section class="mailing-list">
+					<div class="row">
+						<div class="col d-flex flex-column align-items-center">
+							<h2 class="mailing-list__title">Be in the Know</h2>
+							<p class="mailing-list__paragraph">
+								Join our mailing list to find out about new
+								arrivals, sales, exclusive offers, & more
+							</p>
+							<div
+								class="mailing-list__form-container d-flex flex-column align-items-center"
+							>
+								<!-- TODO: [] - Figure out mailing list stuff. -->
+								<form action="" class="mailing-list__form">
+									<div class="row">
+										<div class="col-xs-12 col-md-8">
+											<input
+												class="mailing-list__email-input"
+												type="email"
+												placeholder="enter email address"
+											/>
+										</div>
+										<div class="col-xs-12 col-md-4">
+											<input
+												class="mailing-list__submit-btn"
+												type="submit"
+												value="Sign Up"
+											/>
+										</div>
 									</div>
-									<div class="col-xs-12 col-md-4">
-										<input
-											class="mailing-list__submit-btn"
-											type="submit"
-											value="Sign Up"
-										/>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="mailing-list__icons">
-							<a href="/">
-								<img
-									src="./images/icons/facebook.svg"
-									alt="Facebook Icon"
-								/>
-							</a>
-							<a href="/">
-								<img
-									src="./images/icons/instagram.svg"
-									alt="Instagram Icon"
-								/>
-							</a>
-							<a href="/">
-								<img
-									src="./images/icons/pinterest.svg"
-									alt="Pinterest Icon"
-								/>
-							</a>
+								</form>
+							</div>
+							<div class="mailing-list__icons">
+								<a href="/">
+									<img
+										src="./images/icons/facebook.svg"
+										alt="Facebook Icon"
+									/>
+								</a>
+								<a href="/">
+									<img
+										src="./images/icons/instagram.svg"
+										alt="Instagram Icon"
+									/>
+								</a>
+								<a href="/">
+									<img
+										src="./images/icons/pinterest.svg"
+										alt="Pinterest Icon"
+									/>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<footer class="footer">
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
 				<div class="row footer__top">
 					<div class="col">
 						<img
@@ -379,7 +426,7 @@
 					<div class="col footer__socials">
 						<div class="row">
 							<div class="col">
-								<a href="/">
+								<a href="https://facebook.com">
 									<img
 										src="./images/icons/facebook.svg"
 										alt="Facebook Icon"
@@ -388,7 +435,7 @@
 								</a>
 							</div>
 							<div class="col">
-								<a href="/">
+								<a href="https://instagram.com">
 									<img
 										src="./images/icons/instagram.svg"
 										alt="Instagram Icon"
@@ -397,7 +444,7 @@
 								</a>
 							</div>
 							<div class="col">
-								<a href="/">
+								<a href="https://pinterest.com">
 									<img
 										src="./images/icons/pinterest.svg"
 										alt="Pinterest Icon"
@@ -417,25 +464,52 @@
 					<div class="col footer__links">
 						<div class="row row-cols-3">
 							<div class="col flex-nowrap">
-								<a href="#" class="footer__link small">
+								<a
+									href="./pages/collection/seating.html"
+									class="footer__link small"
+								>
 									Seating
 								</a>
-								<a href="#" class="footer__link small">
+								<a
+									href="./pages/collection/tables.html"
+									class="footer__link small"
+								>
 									Tables
 								</a>
-								<a href="#" class="footer__link small">
+								<a
+									href="./pages/collection/storage.html"
+									class="footer__link small"
+								>
 									Storage
 								</a>
 							</div>
 							<div class="col flex-nowrap">
-								<a href="#" class="footer__link small">
+								<a
+									href="./pages/collection/lighting.html"
+									class="footer__link small"
+								>
 									Lighting
 								</a>
-								<a href="#" class="footer__link small">Rugs</a>
-								<a href="#" class="footer__link small">Art</a>
+								<a
+									href="./pages/collection/rugs.html"
+									class="footer__link small"
+								>
+									Rugs
+								</a>
+								<a
+									href="./pages/collection/art.html"
+									class="footer__link small"
+								>
+									Art
+								</a>
 							</div>
 							<div class="col flex-nowrap">
-								<a href="#" class="footer__link small">Decor</a>
+								<a
+									href="./pages/collection/misc.html"
+									class="footer__link small"
+								>
+									Miscellaneous
+								</a>
 							</div>
 						</div>
 					</div>
@@ -455,8 +529,8 @@
 						<p class="small">Tues-Sat 10-1 By Appointment Only</p>
 					</div>
 				</div>
-			</footer>
-		</main>
+			</div>
+		</footer>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 				// const loadEl = document.querySelector('#load');
@@ -522,12 +596,12 @@
 			const app = initializeApp(firebaseConfig);
 			const analytics = getAnalytics(app);
 		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 			crossorigin="anonymous"
 		></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="./js/index.js"></script>
 	</body>
 </html>

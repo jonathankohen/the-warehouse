@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../css/style.css" />
+		<title>The Warehouse</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<a
+						class="navbar-brand navbar__logo-link"
+						href="../index.html"
+					>
+						<img
+							src="../images/logos/short-logo-black.svg"
+							alt="The Warehouse"
+							class="navbar__logo"
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a
+									class="nav-link navbar__link"
+									href="./pages/collections.html"
+								>
+									Collections
+								</a>
+							</li>
+							<li class="nav-item px-5">
+								<a
+									class="nav-link navbar__link"
+									href="./about.html"
+								>
+									About
+								</a>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link navbar__link"
+									href="./contact.html"
+								>
+									Contact
+								</a>
+							</li>
+						</ul>
+						<button class="btn navbar__btn" type="submit">
+							Book an Appointment
+						</button>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="main-container container">
+				<nav class="breadcrumb__nav" aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">
+							<a href="../../index.html" class="breadcrumb__link">
+								Home
+							</a>
+						</li>
+						<li class="breadcrumb-item active" aria-current="page">
+							Contact
+						</li>
+					</ol>
+				</nav>
+				<h1>We Would Love to Hear From You</h1>
+				<div class="row contact__top-row">
+					<div class="col">
+						<form action="" class="contact-form">
+							<div class="row">
+								<div class="col">
+									<label for="contact_name">Name</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<input
+										type="text"
+										placeholder="Enter name"
+									/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<label for="contact_name">
+										Email Address
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<input
+										type="text"
+										placeholder="Enter Email Address"
+									/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<label for="contact_name">Subject</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<input
+										type="text"
+										placeholder="Enter Subject"
+									/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<label for="contact_name">Message</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<textarea
+										name="contact_message"
+										id="contact_message"
+										cols="30"
+										rows="10"
+										placeholder="Enter Message..."
+									></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<button class="solid-black-btn">
+										Submit
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col">
+						<div class="contact-info">
+							<div class="row">
+								<div class="col">
+									<h6>Facebook</h6>
+									<p>/thewarehouse</p>
+									<img
+										src="../images/misc/hr.svg"
+										alt="Horizontal Rule"
+										class="contact-info__hr"
+									/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<h6>Instagram</h6>
+									<p>@thewarehouse</p>
+									<img
+										src="../images/misc/hr.svg"
+										alt="Horizontal Rule"
+										class="contact-info__hr"
+									/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<h6>Email</h6>
+									<p>info@thewarehousevintage.com</p>
+									<img
+										src="../images/misc/hr.svg"
+										alt="Horizontal Rule"
+										class="contact-info__hr"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row contact__bottom-row">
+					<div class="col contact-info__img-container">
+						<img
+							src="../images/contact/contact.png"
+							alt="Image of Customer Perusing in The Warehouse"
+						/>
+						<p class="contact-info__address">
+							3 Post Office Square, Acton MA 01720
+						</p>
+						<p class="contact-info__small">By appointment only</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="row footer__top">
+					<div class="col">
+						<img
+							src="../images/logos/logo-black.svg"
+							alt="The Warehouse"
+							class="footer__logo"
+						/>
+					</div>
+					<div class="col">
+						<p class="small">Copyright 2023 The Warehouse</p>
+					</div>
+					<div class="col footer__socials">
+						<div class="row">
+							<div class="col">
+								<a href="https://facebook.com">
+									<img
+										src="../images/icons/facebook.svg"
+										alt="Facebook Icon"
+										class="footer__icon"
+									/>
+								</a>
+							</div>
+							<div class="col">
+								<a href="https://instagram.com">
+									<img
+										src="../images/icons/instagram.svg"
+										alt="Instagram Icon"
+										class="footer__icon"
+									/>
+								</a>
+							</div>
+							<div class="col">
+								<a href="https://pinterest.com">
+									<img
+										src="../images/icons/pinterest.svg"
+										alt="Pinterest Icon"
+										class="footer__icon"
+									/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row hr-container">
+					<div class="col">
+						<hr class="footer__hr" />
+					</div>
+				</div>
+				<div class="row footer__bottom">
+					<div class="col footer__links">
+						<div class="row row-cols-3">
+							<div class="col flex-nowrap">
+								<a
+									href="../pages/collection/seating.html"
+									class="footer__link small"
+								>
+									Seating
+								</a>
+								<a
+									href="../pages/collection/tables.html"
+									class="footer__link small"
+								>
+									Tables
+								</a>
+								<a
+									href="../pages/collection/storage.html"
+									class="footer__link small"
+								>
+									Storage
+								</a>
+							</div>
+							<div class="col flex-nowrap">
+								<a
+									href="../pages/collection/lighting.html"
+									class="footer__link small"
+								>
+									Lighting
+								</a>
+								<a
+									href="../pages/collection/rugs.html"
+									class="footer__link small"
+								>
+									Rugs
+								</a>
+								<a
+									href="../pages/collection/art.html"
+									class="footer__link small"
+								>
+									Art
+								</a>
+							</div>
+							<div class="col flex-nowrap">
+								<a
+									href="../pages/collection/misc.html"
+									class="footer__link small"
+								>
+									Miscellaneous
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col footer__address">
+						<p class="small">3 Post office Square Acton MA 01720</p>
+						<a
+							href="mailto:info@thewarehousevintage.com"
+							class="small"
+						>
+							info@thewarehousevintage.com
+						</a>
+					</div>
+					<div class="col footer__cta">
+						<button class="btn navbar__btn" type="submit">
+							Book an Appointment
+						</button>
+						<p class="small">Tues-Sat 10-1 By Appointment Only</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="../js/index.js"></script>
+	</body>
+</html>

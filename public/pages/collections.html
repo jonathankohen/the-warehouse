@@ -9,76 +9,78 @@
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../css/style.css" />
 		<title>The Warehouse</title>
 	</head>
 	<body>
-		<!-- test -->
-		<main class="main-container">
-			<header>
-				<nav class="navbar navbar-expand-lg">
-					<div class="container-fluid">
-						<a
-							class="navbar-brand navbar__logo-link"
-							href="./home.html"
-						>
-							<img
-								src="../images/logos/short-logo-black.svg"
-								alt="The Warehouse"
-								class="navbar__logo"
-							/>
-						</a>
-						<button
-							class="navbar-toggler"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#navbarSupportedContent"
-							aria-controls="navbarSupportedContent"
-							aria-expanded="false"
-							aria-label="Toggle navigation"
-						>
-							<span class="navbar-toggler-icon"></span>
+		<header>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<a
+						class="navbar-brand navbar__logo-link"
+						href="../index.html"
+					>
+						<img
+							src="../images/logos/short-logo-black.svg"
+							alt="The Warehouse"
+							class="navbar__logo"
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a
+									class="nav-link navbar__link"
+									href="./pages/collections.html"
+								>
+									Collections
+								</a>
+							</li>
+							<li class="nav-item px-5">
+								<a
+									class="nav-link navbar__link"
+									href="../pages/about.html"
+								>
+									About
+								</a>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link navbar__link"
+									href="../pages/contact.html"
+								>
+									Contact
+								</a>
+							</li>
+						</ul>
+						<button class="btn navbar__btn" type="submit">
+							Book an Appointment
 						</button>
-						<div
-							class="collapse navbar-collapse"
-							id="navbarSupportedContent"
-						>
-							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-								<li class="nav-item">
-									<a
-										class="nav-link navbar__link"
-										aria-current="page"
-										href="#"
-									>
-										Collections
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link navbar__link" href="#">
-										About
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link navbar__link" href="#">
-										Contact
-									</a>
-								</li>
-							</ul>
-							<button class="btn navbar__btn" type="submit">
-								Book an Appointment
-							</button>
-						</div>
 					</div>
-				</nav>
-			</header>
-			<section class="about">
-				<div class="row">
-					<div class="col about__text"></div>
-					<div class="col about__img"></div>
 				</div>
-			</section>
-
-			<footer class="footer">
+			</nav>
+		</header>
+		<main>
+			<div class="main-container container">
+				<section class="marquee-section"></section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
 				<div class="row footer__top">
 					<div class="col">
 						<img
@@ -93,7 +95,7 @@
 					<div class="col footer__socials">
 						<div class="row">
 							<div class="col">
-								<a href="/">
+								<a href="https://facebook.com">
 									<img
 										src="../images/icons/facebook.svg"
 										alt="Facebook Icon"
@@ -102,7 +104,7 @@
 								</a>
 							</div>
 							<div class="col">
-								<a href="/">
+								<a href="https://instagram.com">
 									<img
 										src="../images/icons/instagram.svg"
 										alt="Instagram Icon"
@@ -111,7 +113,7 @@
 								</a>
 							</div>
 							<div class="col">
-								<a href="/">
+								<a href="https://pinterest.com">
 									<img
 										src="../images/icons/pinterest.svg"
 										alt="Pinterest Icon"
@@ -131,25 +133,52 @@
 					<div class="col footer__links">
 						<div class="row row-cols-3">
 							<div class="col flex-nowrap">
-								<a href="#" class="footer__link small">
+								<a
+									href="../pages/collection/seating.html"
+									class="footer__link small"
+								>
 									Seating
 								</a>
-								<a href="#" class="footer__link small">
+								<a
+									href="../pages/collection/tables.html"
+									class="footer__link small"
+								>
 									Tables
 								</a>
-								<a href="#" class="footer__link small">
+								<a
+									href="../pages/collection/storage.html"
+									class="footer__link small"
+								>
 									Storage
 								</a>
 							</div>
 							<div class="col flex-nowrap">
-								<a href="#" class="footer__link small">
+								<a
+									href="../pages/collection/lighting.html"
+									class="footer__link small"
+								>
 									Lighting
 								</a>
-								<a href="#" class="footer__link small">Rugs</a>
-								<a href="#" class="footer__link small">Art</a>
+								<a
+									href="../pages/collection/rugs.html"
+									class="footer__link small"
+								>
+									Rugs
+								</a>
+								<a
+									href="../pages/collection/art.html"
+									class="footer__link small"
+								>
+									Art
+								</a>
 							</div>
 							<div class="col flex-nowrap">
-								<a href="#" class="footer__link small">Decor</a>
+								<a
+									href="../pages/collection/misc.html"
+									class="footer__link small"
+								>
+									Miscellaneous
+								</a>
 							</div>
 						</div>
 					</div>
@@ -169,14 +198,14 @@
 						<p class="small">Tues-Sat 10-1 By Appointment Only</p>
 					</div>
 				</div>
-			</footer>
-		</main>
+			</div>
+		</footer>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 			crossorigin="anonymous"
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="../index.js"></script>
+		<script src="../js/index.js"></script>
 	</body>
 </html>
