@@ -10,7 +10,13 @@
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/images/icons/favicon.svg"
+		/>
+		<link rel="icon" type="image/png" href="/images/icons/favicon.png" />
 
 		<title>The Warehouse</title>
 
@@ -64,9 +70,12 @@
 		<header>
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
-					<a class="navbar-brand navbar__logo-link" href="#">
+					<a
+						class="navbar-brand navbar__logo-link"
+						href="/index.html"
+					>
 						<img
-							src="./images/logos/short-logo-black.svg"
+							src="/images/logos/short-logo-black.svg"
 							alt="The Warehouse"
 							class="navbar__logo"
 						/>
@@ -90,15 +99,17 @@
 							<li class="nav-item">
 								<a
 									class="nav-link navbar__link"
-									href="./pages/collections.html"
+									id="navbar__link-collections"
+									href="/pages/collections.html"
 								>
 									Collections
 								</a>
 							</li>
-							<li class="nav-item px-5">
+							<li class="nav-item">
 								<a
 									class="nav-link navbar__link"
-									href="./pages/about.html"
+									id="navbar__link-about"
+									href="/pages/about.html"
 								>
 									About
 								</a>
@@ -106,63 +117,69 @@
 							<li class="nav-item">
 								<a
 									class="nav-link navbar__link"
-									href="./pages/contact.html"
+									id="navbar__link-contact"
+									href="/pages/contact.html"
 								>
 									Contact
 								</a>
 							</li>
 						</ul>
-						<button class="btn navbar__btn" type="submit">
+						<a
+							class="btn navbar__btn booking-btn"
+							href="/pages/contact.html"
+						>
 							Book an Appointment
-						</button>
+						</a>
 					</div>
 				</div>
 			</nav>
 		</header>
 		<main>
-			<div class="main-container container">
+			<img
+				class="hero__img-mobile"
+				src="/images/hero/mobile/hero.svg"
+				alt="Hero Image"
+			/>
+			<div class="container">
 				<section class="hero">
-					<picture>
-						<source
-							media="(min-width:768px)"
-							srcset="./images/hero/desktop/hero.svg"
-						/>
-						<img
-							src="./images/hero/mobile/hero.svg"
-							alt="Hero Image"
-						/>
-					</picture>
+					<img
+						class="hero__img"
+						src="/images/hero/desktop/hero.svg"
+						alt="Hero Image"
+					/>
 				</section>
 				<section class="ctas">
 					<div class="row d-flex align-items-center">
-						<div class="cta cta-left col-6">
+						<div class="cta cta-left col-xs-12 col-md-6">
 							<h2>Your Personal curators of vintage furniture</h2>
 						</div>
-						<div class="cta col-6">
-							<div class="row d-flex align-items-center">
+						<div class="cta col-xs-12 col-md-6">
+							<div
+								class="row d-flex align-items-center flex-nowrap"
+							>
 								<div class="col cta-col">
 									<h3 class="cta-h3">
 										Explore the Warehouse
 									</h3>
 									<div class="cta-btn-container">
 										<a
-											class="cta-btn"
-											href="./pages/contact.html"
+											class="black-outline-btn booking-btn"
+											href="/pages/contact.html"
 										>
 											Book an Appointment
 										</a>
 									</div>
 								</div>
-								<div class="separator col">
+								<div class="col separator">
 									<img
-										src="./images/misc/separator.svg"
+										src="/images/misc/separator.svg"
 										alt="Vertical separator"
 									/>
 								</div>
 								<div class="col cta-col">
 									<h3 class="cta-h3">View our Collection</h3>
 									<div class="cta-btn-container">
-										<a class="cta-btn" href="/">
+										<a class="black-outline-btn" href="/">
 											Learn More
 										</a>
 									</div>
@@ -178,7 +195,10 @@
 								Your Personal Curators of Vintage Furniture
 							</h1>
 							<div class="mobile-cta__btn-container">
-								<a class="mobile-cta__btn" href="#">
+								<a
+									class="mobile-cta__btn booking-btn"
+									href="/pages/contact.html"
+								>
 									Book an Appointment
 								</a>
 							</div>
@@ -193,14 +213,14 @@
 								<source
 									media="(min-width:768px)"
 									srcset="
-										./images/collections/desktop/seating.svg
+										/images/collections/desktop/seating.svg
 									"
 								/>
 								<img
-									src="./images/collections/mobile/seating.svg"
+									src="/images/collections/mobile/seating.svg"
 									alt="Seating Collection"
 									class="collections-section__img"
-									onclick="location.href='./pages/collection/seating.html';"
+									onclick="location.href='/pages/collection/seating.html';"
 								/>
 							</picture>
 							<!-- Rugs -->
@@ -208,14 +228,14 @@
 								<source
 									media="(min-width:768px)"
 									srcset="
-										./images/collections/desktop/rugs.svg
+										/images/collections/desktop/rugs.svg
 									"
 								/>
 								<img
-									src="./images/collections/mobile/rugs.svg"
+									src="/images/collections/mobile/rugs.svg"
 									alt="Rugs Collection"
 									class="collections-section__img"
-									onclick="location.href='./pages/collection/rugs.html';"
+									onclick="location.href='/pages/collection/rugs.html';"
 								/>
 							</picture>
 						</div>
@@ -225,14 +245,14 @@
 								<source
 									media="(min-width:768px)"
 									srcset="
-										./images/collections/desktop/tables.svg
+										/images/collections/desktop/tables.svg
 									"
 								/>
 								<img
-									src="./images/collections/mobile/tables.svg"
+									src="/images/collections/mobile/tables.svg"
 									alt="Tables Collection"
 									class="collections-section__img"
-									onclick="location.href='./pages/collection/tables.html';"
+									onclick="location.href='/pages/collection/tables.html';"
 								/>
 							</picture>
 							<!-- Storage -->
@@ -240,14 +260,14 @@
 								<source
 									media="(min-width:768px)"
 									srcset="
-										./images/collections/desktop/storage.svg
+										/images/collections/desktop/storage.svg
 									"
 								/>
 								<img
-									src="./images/collections/mobile/storage.svg"
+									src="/images/collections/mobile/storage.svg"
 									alt="Storage Collection"
 									class="collections-section__img"
-									onclick="location.href='./pages/collection/storage.html';"
+									onclick="location.href='/pages/collection/storage.html';"
 								/>
 							</picture>
 							<!-- Lighting -->
@@ -255,14 +275,14 @@
 								<source
 									media="(min-width:768px)"
 									srcset="
-										./images/collections/desktop/lighting.svg
+										/images/collections/desktop/lighting.svg
 									"
 								/>
 								<img
-									src="./images/collections/mobile/lighting.svg"
+									src="/images/collections/mobile/lighting.svg"
 									alt="Lighting Collection"
 									class="collections-section__img"
-									onclick="location.href='./pages/collection/lighting.html';"
+									onclick="location.href='/pages/collection/lighting.html';"
 								/>
 							</picture>
 						</div>
@@ -273,15 +293,13 @@
 							<picture>
 								<source
 									media="(min-width:768px)"
-									srcset="
-										./images/collections/desktop/art.svg
-									"
+									srcset="/images/collections/desktop/art.svg"
 								/>
 								<img
-									src="./images/collections/mobile/art.svg"
+									src="/images/collections/mobile/art.svg"
 									alt="Art Collection"
 									class="collections-section__img collections-section__img-bottom"
-									onclick="location.href='./pages/collection/art.html';"
+									onclick="location.href='/pages/collection/art.html';"
 								/>
 							</picture>
 						</div>
@@ -291,14 +309,14 @@
 								<source
 									media="(min-width:768px)"
 									srcset="
-										./images/collections/desktop/misc.svg
+										/images/collections/desktop/misc.svg
 									"
 								/>
 								<img
-									src="./images/collections/mobile/misc.svg"
+									src="/images/collections/mobile/misc.svg"
 									alt="Misc. Collection"
 									class="collections-section__img collections-section__img-bottom"
-									onclick="location.href='./pages/collection/misc.html';"
+									onclick="location.href='/pages/collection/misc.html';"
 								/>
 							</picture>
 						</div>
@@ -314,18 +332,18 @@
 								<img
 									class="reviews__arrow"
 									id="reviews__left-arrow"
-									src="./images/icons/left-arrow-disabled.svg"
+									src="/images/icons/left-arrow-disabled.svg"
 									alt="Left Arrow"
 								/>
 								<img
 									class="arrow right-arrow"
 									id="reviews__right-arrow"
-									src="./images/icons/right-arrow-active.svg"
+									src="/images/icons/right-arrow-active.svg"
 									alt="Right Arrow"
 								/>
 							</div>
 							<div class="review__btn-container">
-								<a class="review__btn" href="/">
+								<a class="black-outline-btn" href="/">
 									Leave a Review
 								</a>
 							</div>
@@ -337,7 +355,7 @@
 					<div class="row">
 						<div class="showroom__left col-xs-12 col-md-4">
 							<img
-								src="./images/showroom/yellow-chair.png"
+								src="/images/showroom/yellow-chair.png"
 								alt="Showroom Display"
 								id="yellow-chair"
 							/>
@@ -348,7 +366,11 @@
 								Conveniently located about 30 minutes outside of
 								Boston
 							</h3>
-							<a href="/" class="showroom__btn">
+							<a
+								href="/pages/contact.html"
+								class="solid-white-btn booking-btn"
+								id="showroom__btn"
+							>
 								Book an Appointment
 							</a>
 						</div>
@@ -365,17 +387,20 @@
 							<div
 								class="mailing-list__form-container d-flex flex-column align-items-center"
 							>
-								<!-- TODO: [] - Figure out mailing list stuff. -->
 								<form action="" class="mailing-list__form">
-									<div class="row">
-										<div class="col-xs-12 col-md-8">
+									<div class="row mailing-list__input-row">
+										<div
+											class="col-xs-12 col-md-8 mobile-input"
+										>
 											<input
 												class="mailing-list__email-input"
-												type="email"
+												type="text"
 												placeholder="enter email address"
 											/>
 										</div>
-										<div class="col-xs-12 col-md-4">
+										<div
+											class="col-xs-12 col-md-4 mobile-input"
+										>
 											<input
 												class="mailing-list__submit-btn"
 												type="submit"
@@ -384,26 +409,6 @@
 										</div>
 									</div>
 								</form>
-							</div>
-							<div class="mailing-list__icons">
-								<a href="/">
-									<img
-										src="./images/icons/facebook.svg"
-										alt="Facebook Icon"
-									/>
-								</a>
-								<a href="/">
-									<img
-										src="./images/icons/instagram.svg"
-										alt="Instagram Icon"
-									/>
-								</a>
-								<a href="/">
-									<img
-										src="./images/icons/pinterest.svg"
-										alt="Pinterest Icon"
-									/>
-								</a>
 							</div>
 						</div>
 					</div>
@@ -415,7 +420,7 @@
 				<div class="row footer__top">
 					<div class="col">
 						<img
-							src="./images/logos/logo-black.svg"
+							src="/images/logos/logo-black.svg"
 							alt="The Warehouse"
 							class="footer__logo"
 						/>
@@ -428,7 +433,7 @@
 							<div class="col">
 								<a href="https://facebook.com">
 									<img
-										src="./images/icons/facebook.svg"
+										src="/images/icons/facebook.svg"
 										alt="Facebook Icon"
 										class="footer__icon"
 									/>
@@ -437,7 +442,7 @@
 							<div class="col">
 								<a href="https://instagram.com">
 									<img
-										src="./images/icons/instagram.svg"
+										src="/images/icons/instagram.svg"
 										alt="Instagram Icon"
 										class="footer__icon"
 									/>
@@ -446,7 +451,7 @@
 							<div class="col">
 								<a href="https://pinterest.com">
 									<img
-										src="./images/icons/pinterest.svg"
+										src="/images/icons/pinterest.svg"
 										alt="Pinterest Icon"
 										class="footer__icon"
 									/>
@@ -465,19 +470,19 @@
 						<div class="row row-cols-3">
 							<div class="col flex-nowrap">
 								<a
-									href="./pages/collection/seating.html"
+									href="/pages/collection/seating.html"
 									class="footer__link small"
 								>
 									Seating
 								</a>
 								<a
-									href="./pages/collection/tables.html"
+									href="/pages/collection/tables.html"
 									class="footer__link small"
 								>
 									Tables
 								</a>
 								<a
-									href="./pages/collection/storage.html"
+									href="/pages/collection/storage.html"
 									class="footer__link small"
 								>
 									Storage
@@ -485,19 +490,19 @@
 							</div>
 							<div class="col flex-nowrap">
 								<a
-									href="./pages/collection/lighting.html"
+									href="/pages/collection/lighting.html"
 									class="footer__link small"
 								>
 									Lighting
 								</a>
 								<a
-									href="./pages/collection/rugs.html"
+									href="/pages/collection/rugs.html"
 									class="footer__link small"
 								>
 									Rugs
 								</a>
 								<a
-									href="./pages/collection/art.html"
+									href="/pages/collection/art.html"
 									class="footer__link small"
 								>
 									Art
@@ -505,13 +510,30 @@
 							</div>
 							<div class="col flex-nowrap">
 								<a
-									href="./pages/collection/misc.html"
+									href="/pages/collection/misc.html"
 									class="footer__link small"
 								>
 									Miscellaneous
 								</a>
 							</div>
 						</div>
+					</div>
+					<div class="col footer__mobile-links">
+						<a
+							class="footer__mobile-link"
+							href="/pages/collections.html"
+						>
+							Collections
+						</a>
+						<a
+							class="footer__mobile-link"
+							href="/pages/contact.html"
+						>
+							Contact
+						</a>
+						<a class="footer__mobile-link" href="/pages/about.html">
+							About
+						</a>
 					</div>
 					<div class="col footer__address">
 						<p class="small">3 Post office Square Acton MA 01720</p>
@@ -523,10 +545,57 @@
 						</a>
 					</div>
 					<div class="col footer__cta">
-						<button class="btn navbar__btn" type="submit">
+						<a class="btn navbar__btn booking-btn" type="submit">
 							Book an Appointment
-						</button>
+						</a>
 						<p class="small">Tues-Sat 10-1 By Appointment Only</p>
+					</div>
+					<div class="footer__mobile-bottom">
+						<p class="footer__mobile-address">
+							By appointment only
+						</p>
+						<p class="footer__mobile-address">
+							3 Post office Square Acton MA 01720
+						</p>
+						<img
+							class="footer__mobile-logo"
+							src="/images/logos/logo-black.svg"
+							alt="The Warehouse"
+						/>
+						<div class="col footer__socials-mobile">
+							<div class="row">
+								<div class="col">
+									<a href="https://facebook.com">
+										<img
+											src="/images/icons/facebook.svg"
+											alt="Facebook Icon"
+											class="footer__icon"
+										/>
+									</a>
+								</div>
+								<div class="col">
+									<a href="https://instagram.com">
+										<img
+											src="/images/icons/instagram.svg"
+											alt="Instagram Icon"
+											class="footer__icon"
+										/>
+									</a>
+								</div>
+								<div class="col">
+									<a href="https://pinterest.com">
+										<img
+											src="/images/icons/pinterest.svg"
+											alt="Pinterest Icon"
+											class="footer__icon"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+						<p class="footer__mobile-copyright">
+							2023 The Warehouse
+						</p>
 					</div>
 				</div>
 			</div>
@@ -602,6 +671,6 @@
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 			crossorigin="anonymous"
 		></script>
-		<script src="./js/index.js"></script>
+		<script src="/js/index.js"></script>
 	</body>
 </html>

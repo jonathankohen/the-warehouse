@@ -9,7 +9,7 @@
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="../../css/style.css" />
+		<link rel="stylesheet" href="/css/style.css" />
 		<title>Seating</title>
 	</head>
 	<body>
@@ -18,10 +18,10 @@
 				<div class="container-fluid">
 					<a
 						class="navbar-brand navbar__logo-link"
-						href="../../index.html"
+						href="/index.html"
 					>
 						<img
-							src="../../images/logos/short-logo-black.svg"
+							src="/images/logos/short-logo-black.svg"
 							alt="The Warehouse"
 							class="navbar__logo"
 						/>
@@ -45,15 +45,17 @@
 							<li class="nav-item">
 								<a
 									class="nav-link navbar__link"
-									href="../collections.html"
+									id="navbar__link-collections"
+									href="/pages/collections.html"
 								>
 									Collections
 								</a>
 							</li>
-							<li class="nav-item px-5">
+							<li class="nav-item">
 								<a
 									class="nav-link navbar__link"
-									href="../about.html"
+									id="navbar__link-about"
+									href="/pages/about.html"
 								>
 									About
 								</a>
@@ -61,15 +63,19 @@
 							<li class="nav-item">
 								<a
 									class="nav-link navbar__link"
-									href="../contact.html"
+									id="navbar__link-contact"
+									href="/pages/contact.html"
 								>
 									Contact
 								</a>
 							</li>
 						</ul>
-						<button class="btn navbar__btn" type="submit">
+						<a
+							class="btn navbar__btn booking-btn"
+							href="/pages/contact.html"
+						>
 							Book an Appointment
-						</button>
+						</a>
 					</div>
 				</div>
 			</nav>
@@ -91,13 +97,6 @@
 				<div class="row">
 					<div class="col">
 						<h1>Seating</h1>
-						<p class="collection__desc">
-							Rediscover timeless comfort and elegance with our
-							curated collection of vintage seating. Each piece
-							tells a story of craftsmanship and character,
-							meticulously selected to bring a touch of nostalgia
-							and sophistication to your space.
-						</p>
 					</div>
 				</div>
 			</section>
@@ -113,98 +112,212 @@
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-body">
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-xs-12 col-md-7">
+								<div
+									id="carouselExampleControlsNoTouching"
+									class="carousel slide"
+									data-bs-touch="false"
+									data-bs-interval="false"
+								>
+									<div class="carousel-indicators">
+										<button
+											type="button"
+											data-bs-target="#modal-carousel"
+											data-bs-slide-to="0"
+											class="active"
+											aria-current="true"
+											aria-label="Slide 1"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#modal-carousel"
+											data-bs-slide-to="1"
+											aria-label="Slide 2"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#modal-carousel"
+											data-bs-slide-to="2"
+											aria-label="Slide 3"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#modal-carousel"
+											data-bs-slide-to="3"
+											aria-label="Slide 4"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#modal-carousel"
+											data-bs-slide-to="4"
+											aria-label="Slide 5"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#modal-carousel"
+											data-bs-slide-to="5"
+											aria-label="Slide 6"
+										></button>
+										<button
+											type="button"
+											data-bs-target="#modal-carousel"
+											data-bs-slide-to="6"
+											aria-label="Slide 7"
+										></button>
+									</div>
+									<div class="carousel-inner">
+										<div
+											class="carousel-item modal-carousel-item active"
+										>
 											<img
-												src="../../images/collection/examples/big-white-square.png"
+												src="/images/collection/examples/gray-rect.svg"
 												alt="Example"
-												class="modal-big-img"
+												class="d-block w-100"
 											/>
 										</div>
-										<div class="col-xs-12 col-md">
-											<div class="row">
-												<div class="col-xs-12 col-md">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-												<div class="col-xs-12 col-md">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-											</div>
-											<div class="row modal-middle-row">
-												<div class="col-xs-12 col-md">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-												<div class="col-xs-12 col-md">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-xs-12 col-md">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-												<div class="col-xs-12 col-md">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-											</div>
+										<div
+											class="carousel-item modal-carousel-item"
+										>
+											<img
+												src="/images/collection/examples/gray-rect.svg"
+												alt="Example"
+												class="d-block w-100"
+											/>
+										</div>
+										<div
+											class="carousel-item modal-carousel-item"
+										>
+											<img
+												src="/images/collection/examples/gray-rect.svg"
+												alt="Example"
+												class="d-block w-100"
+											/>
+										</div>
+										<div
+											class="carousel-item modal-carousel-item"
+										>
+											<img
+												src="/images/collection/examples/gray-rect.svg"
+												alt="Example"
+												class="d-block w-100"
+											/>
+										</div>
+										<div
+											class="carousel-item modal-carousel-item"
+										>
+											<img
+												src="/images/collection/examples/gray-rect.svg"
+												alt="Example"
+												class="d-block w-100"
+											/>
+										</div>
+										<div
+											class="carousel-item modal-carousel-item"
+										>
+											<img
+												src="/images/collection/examples/gray-rect.svg"
+												alt="Example"
+												class="d-block w-100"
+											/>
+										</div>
+										<div
+											class="carousel-item modal-carousel-item"
+										>
+											<img
+												src="/images/collection/examples/gray-rect.svg"
+												alt="Example"
+												class="d-block w-100"
+											/>
 										</div>
 									</div>
+									<button
+										class="carousel-control-prev"
+										type="button"
+										data-bs-target="#carouselExampleControlsNoTouching"
+										data-bs-slide="prev"
+									>
+										<span
+											class="carousel-control-prev-icon"
+											aria-hidden="true"
+										></span>
+										<span class="visually-hidden">
+											Previous
+										</span>
+									</button>
+									<button
+										class="carousel-control-next"
+										type="button"
+										data-bs-target="#carouselExampleControlsNoTouching"
+										data-bs-slide="next"
+									>
+										<span
+											class="carousel-control-next-icon"
+											aria-hidden="true"
+										></span>
+										<span class="visually-hidden">
+											Next
+										</span>
+									</button>
+								</div>
+								<div class="container-fluid">
 									<div class="row modal-row">
 										<div class="col-md-6 ms-auto">
-											<h4>Name of Item</h4>
+											<h4 class="product-name">
+												Name of Item 1
+											</h4>
 										</div>
-										<div class="col-md-6">
+										<div
+											class="col-md-6 d-flex justify-content-end"
+										>
 											<div class="row">
 												<div
-													class="col d-flex justify-content-center align-items-center"
+													class="col d-flex justify-content-end align-items-center"
 												>
 													<p class="modal-text">
 														Share
 													</p>
-													<img
-														src="../../images/icons/instagram.svg"
-														alt="Instragram Icon"
-														class="modal-icon"
-													/>
-													<img
-														src="../../images/icons/twitter.svg"
-														alt="Twitter Icon"
-														class="modal-icon"
-													/>
-													<img
-														src="../../images/icons/facebook.svg"
-														alt="Facebook Icon"
-														class="modal-icon"
-													/>
-													<img
-														src="../../images/icons/share.svg"
-														alt="Share Icon"
-														class="modal-icon"
-													/>
+													<a
+														href="https://instagram.com/"
+														target="_blank"
+													>
+														<img
+															src="/images/icons/instagram.svg"
+															alt="Instragram Icon"
+															class="modal-icon"
+														/>
+													</a>
+													<a
+														href="https://twitter.com/"
+														target="_blank"
+													>
+														<img
+															src="/images/icons/twitter.svg"
+															alt="Twitter Icon"
+															class="modal-icon"
+														/>
+													</a>
+													<a
+														href="https://facebook.com/"
+														target="_blank"
+													>
+														<img
+															src="/images/icons/facebook.svg"
+															alt="Facebook Icon"
+															class="modal-icon"
+														/>
+													</a>
+													<a
+														href="#"
+														class="collection-share-btn"
+														data-bs-toggle="tooltip"
+														data-bs-placement="top"
+														title="Link Copied to Clipboard"
+													>
+														<img
+															src="/images/icons/share.svg"
+															alt="Share Icon"
+															class="modal-icon"
+														/>
+													</a>
 												</div>
 											</div>
 										</div>
@@ -237,13 +350,11 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="modal-footer me-auto">
-								<div class="row">
+								<div class="row collection-modal-footer">
 									<div class="col">
 										<button
-											type="button"
-											class="btn outline-btn"
+											class="solid-black-btn"
+											type="btn"
 											data-bs-dismiss="modal"
 										>
 											Check for Availability
@@ -269,7 +380,7 @@
 									<div class="row">
 										<div class="col-md-7">
 											<img
-												src="../../images/collection/examples/big-white-square.png"
+												src="/images/collection/examples/big-white-square.png"
 												alt="Example"
 												class="modal-big-img"
 											/>
@@ -278,14 +389,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -294,14 +405,14 @@
 											<div class="row modal-middle-row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -310,14 +421,186 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
+														alt="Example"
+														class="modal-small-img"
+													/>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row modal-row">
+										<div class="col-md-6 ms-auto">
+											<h4>Name of Item</h4>
+										</div>
+										<div class="col-md-6">
+											<div class="row">
+												<div
+													class="col d-flex justify-content-center align-items-center"
+												>
+													<p class="modal-text">
+														Share
+													</p>
+													<a
+														href="https://instagram.com/"
+														target="_blank"
+													>
+														<img
+															src="/images/icons/instagram.svg"
+															alt="Instragram Icon"
+															class="modal-icon"
+														/>
+													</a>
+													<a
+														href="https://twitter.com/"
+														target="_blank"
+													>
+														<img
+															src="/images/icons/twitter.svg"
+															alt="Twitter Icon"
+															class="modal-icon"
+														/>
+													</a>
+													<a
+														href="https://facebook.com/"
+														target="_blank"
+													>
+														<img
+															src="/images/icons/facebook.svg"
+															alt="Facebook Icon"
+															class="modal-icon"
+														/>
+													</a>
+													<a
+														href="#"
+														class="collection-share-btn"
+													>
+														<img
+															src="/images/icons/share.svg"
+															alt="Share Icon"
+															class="modal-icon"
+														/>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<p class="modal-desc-title">
+												Danish - 1960s
+											</p>
+											<p class="modal-desc-title">
+												Dimensions
+											</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<p class="modal-desc-body">
+												Lorem ipsum dolor sit amet
+												consectetur. Adipiscing
+												hendrerit arcu aliquet eu non
+												convallis scelerisque nulla
+												morbi. Dictumst montes varius
+												feugiat volutpat tristique sed
+												auctor nibh. Suscipit et eget
+												tempus erat neque. Magna massa
+												euismod convallis ac in euismod.
+												Scelerisque porttitor faucibus
+												semper ultrices id eget.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer me-auto">
+								<div class="row">
+									<div class="col">
+										<button
+											type="button"
+											class="btn outline-btn"
+											data-bs-dismiss="modal"
+										>
+											Check for Availability
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal 3 -->
+				<div
+					class="modal fade"
+					id="seating-modal-3"
+					tabindex="-1"
+					aria-labelledby="seating-modal-3-label"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-md-7">
+											<img
+												src="/images/collection/examples/big-white-square.png"
+												alt="Example"
+												class="modal-big-img"
+											/>
+										</div>
+										<div class="col-md">
+											<div class="row">
+												<div class="col">
+													<img
+														src="/images/collection/examples/small-white-square.png"
+														alt="Example"
+														class="modal-small-img"
+													/>
+												</div>
+												<div class="col">
+													<img
+														src="/images/collection/examples/small-white-square.png"
+														alt="Example"
+														class="modal-small-img"
+													/>
+												</div>
+											</div>
+											<div class="row modal-middle-row">
+												<div class="col">
+													<img
+														src="/images/collection/examples/small-white-square.png"
+														alt="Example"
+														class="modal-small-img"
+													/>
+												</div>
+												<div class="col">
+													<img
+														src="/images/collection/examples/small-white-square.png"
+														alt="Example"
+														class="modal-small-img"
+													/>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col">
+													<img
+														src="/images/collection/examples/small-white-square.png"
+														alt="Example"
+														class="modal-small-img"
+													/>
+												</div>
+												<div class="col">
+													<img
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -338,22 +621,22 @@
 														Share
 													</p>
 													<img
-														src="../../images/icons/instagram.svg"
+														src="/images/icons/instagram.svg"
 														alt="Instragram Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/twitter.svg"
+														src="/images/icons/twitter.svg"
 														alt="Twitter Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/facebook.svg"
+														src="/images/icons/facebook.svg"
 														alt="Facebook Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/share.svg"
+														src="/images/icons/share.svg"
 														alt="Share Icon"
 														class="modal-icon"
 													/>
@@ -421,7 +704,7 @@
 									<div class="row">
 										<div class="col-md-7">
 											<img
-												src="../../images/collection/examples/big-white-square.png"
+												src="/images/collection/examples/big-white-square.png"
 												alt="Example"
 												class="modal-big-img"
 											/>
@@ -430,14 +713,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -446,14 +729,14 @@
 											<div class="row modal-middle-row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -462,14 +745,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -490,174 +773,22 @@
 														Share
 													</p>
 													<img
-														src="../../images/icons/instagram.svg"
+														src="/images/icons/instagram.svg"
 														alt="Instragram Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/twitter.svg"
+														src="/images/icons/twitter.svg"
 														alt="Twitter Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/facebook.svg"
+														src="/images/icons/facebook.svg"
 														alt="Facebook Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/share.svg"
-														alt="Share Icon"
-														class="modal-icon"
-													/>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col">
-											<p class="modal-desc-title">
-												Danish - 1960s
-											</p>
-											<p class="modal-desc-title">
-												Dimensions
-											</p>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col">
-											<p class="modal-desc-body">
-												Lorem ipsum dolor sit amet
-												consectetur. Adipiscing
-												hendrerit arcu aliquet eu non
-												convallis scelerisque nulla
-												morbi. Dictumst montes varius
-												feugiat volutpat tristique sed
-												auctor nibh. Suscipit et eget
-												tempus erat neque. Magna massa
-												euismod convallis ac in euismod.
-												Scelerisque porttitor faucibus
-												semper ultrices id eget.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="modal-footer me-auto">
-								<div class="row">
-									<div class="col">
-										<button
-											type="button"
-											class="btn outline-btn"
-											data-bs-dismiss="modal"
-										>
-											Check for Availability
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Modal 3 -->
-				<div
-					class="modal fade"
-					id="seating-modal-3"
-					tabindex="-1"
-					aria-labelledby="seating-modal-3-label"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-body">
-								<div class="container-fluid">
-									<div class="row">
-										<div class="col-md-7">
-											<img
-												src="../../images/collection/examples/big-white-square.png"
-												alt="Example"
-												class="modal-big-img"
-											/>
-										</div>
-										<div class="col-md">
-											<div class="row">
-												<div class="col">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-												<div class="col">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-											</div>
-											<div class="row modal-middle-row">
-												<div class="col">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-												<div class="col">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-												<div class="col">
-													<img
-														src="../../images/collection/examples/small-white-square.png"
-														alt="Example"
-														class="modal-small-img"
-													/>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="row modal-row">
-										<div class="col-md-6 ms-auto">
-											<h4>Name of Item</h4>
-										</div>
-										<div class="col-md-6">
-											<div class="row">
-												<div
-													class="col d-flex justify-content-center align-items-center"
-												>
-													<p class="modal-text">
-														Share
-													</p>
-													<img
-														src="../../images/icons/instagram.svg"
-														alt="Instragram Icon"
-														class="modal-icon"
-													/>
-													<img
-														src="../../images/icons/twitter.svg"
-														alt="Twitter Icon"
-														class="modal-icon"
-													/>
-													<img
-														src="../../images/icons/facebook.svg"
-														alt="Facebook Icon"
-														class="modal-icon"
-													/>
-													<img
-														src="../../images/icons/share.svg"
+														src="/images/icons/share.svg"
 														alt="Share Icon"
 														class="modal-icon"
 													/>
@@ -725,7 +856,7 @@
 									<div class="row">
 										<div class="col-md-7">
 											<img
-												src="../../images/collection/examples/big-white-square.png"
+												src="/images/collection/examples/big-white-square.png"
 												alt="Example"
 												class="modal-big-img"
 											/>
@@ -734,14 +865,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -750,14 +881,14 @@
 											<div class="row modal-middle-row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -766,14 +897,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -794,22 +925,22 @@
 														Share
 													</p>
 													<img
-														src="../../images/icons/instagram.svg"
+														src="/images/icons/instagram.svg"
 														alt="Instragram Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/twitter.svg"
+														src="/images/icons/twitter.svg"
 														alt="Twitter Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/facebook.svg"
+														src="/images/icons/facebook.svg"
 														alt="Facebook Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/share.svg"
+														src="/images/icons/share.svg"
 														alt="Share Icon"
 														class="modal-icon"
 													/>
@@ -877,7 +1008,7 @@
 									<div class="row">
 										<div class="col-md-7">
 											<img
-												src="../../images/collection/examples/big-white-square.png"
+												src="/images/collection/examples/big-white-square.png"
 												alt="Example"
 												class="modal-big-img"
 											/>
@@ -886,14 +1017,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -902,14 +1033,14 @@
 											<div class="row modal-middle-row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -918,14 +1049,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -946,22 +1077,22 @@
 														Share
 													</p>
 													<img
-														src="../../images/icons/instagram.svg"
+														src="/images/icons/instagram.svg"
 														alt="Instragram Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/twitter.svg"
+														src="/images/icons/twitter.svg"
 														alt="Twitter Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/facebook.svg"
+														src="/images/icons/facebook.svg"
 														alt="Facebook Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/share.svg"
+														src="/images/icons/share.svg"
 														alt="Share Icon"
 														class="modal-icon"
 													/>
@@ -1029,7 +1160,7 @@
 									<div class="row">
 										<div class="col-md-7">
 											<img
-												src="../../images/collection/examples/big-white-square.png"
+												src="/images/collection/examples/big-white-square.png"
 												alt="Example"
 												class="modal-big-img"
 											/>
@@ -1038,14 +1169,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1054,14 +1185,14 @@
 											<div class="row modal-middle-row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1070,14 +1201,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1098,22 +1229,22 @@
 														Share
 													</p>
 													<img
-														src="../../images/icons/instagram.svg"
+														src="/images/icons/instagram.svg"
 														alt="Instragram Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/twitter.svg"
+														src="/images/icons/twitter.svg"
 														alt="Twitter Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/facebook.svg"
+														src="/images/icons/facebook.svg"
 														alt="Facebook Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/share.svg"
+														src="/images/icons/share.svg"
 														alt="Share Icon"
 														class="modal-icon"
 													/>
@@ -1181,7 +1312,7 @@
 									<div class="row">
 										<div class="col-md-7">
 											<img
-												src="../../images/collection/examples/big-white-square.png"
+												src="/images/collection/examples/big-white-square.png"
 												alt="Example"
 												class="modal-big-img"
 											/>
@@ -1190,14 +1321,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1206,14 +1337,14 @@
 											<div class="row modal-middle-row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1222,14 +1353,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1250,22 +1381,22 @@
 														Share
 													</p>
 													<img
-														src="../../images/icons/instagram.svg"
+														src="/images/icons/instagram.svg"
 														alt="Instragram Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/twitter.svg"
+														src="/images/icons/twitter.svg"
 														alt="Twitter Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/facebook.svg"
+														src="/images/icons/facebook.svg"
 														alt="Facebook Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/share.svg"
+														src="/images/icons/share.svg"
 														alt="Share Icon"
 														class="modal-icon"
 													/>
@@ -1333,7 +1464,7 @@
 									<div class="row">
 										<div class="col-md-7">
 											<img
-												src="../../images/collection/examples/big-white-square.png"
+												src="/images/collection/examples/big-white-square.png"
 												alt="Example"
 												class="modal-big-img"
 											/>
@@ -1342,14 +1473,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1358,14 +1489,14 @@
 											<div class="row modal-middle-row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1374,14 +1505,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1402,22 +1533,22 @@
 														Share
 													</p>
 													<img
-														src="../../images/icons/instagram.svg"
+														src="/images/icons/instagram.svg"
 														alt="Instragram Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/twitter.svg"
+														src="/images/icons/twitter.svg"
 														alt="Twitter Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/facebook.svg"
+														src="/images/icons/facebook.svg"
 														alt="Facebook Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/share.svg"
+														src="/images/icons/share.svg"
 														alt="Share Icon"
 														class="modal-icon"
 													/>
@@ -1485,7 +1616,7 @@
 									<div class="row">
 										<div class="col-md-7">
 											<img
-												src="../../images/collection/examples/big-white-square.png"
+												src="/images/collection/examples/big-white-square.png"
 												alt="Example"
 												class="modal-big-img"
 											/>
@@ -1494,14 +1625,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1510,14 +1641,14 @@
 											<div class="row modal-middle-row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1526,14 +1657,14 @@
 											<div class="row">
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
 												</div>
 												<div class="col">
 													<img
-														src="../../images/collection/examples/small-white-square.png"
+														src="/images/collection/examples/small-white-square.png"
 														alt="Example"
 														class="modal-small-img"
 													/>
@@ -1554,22 +1685,22 @@
 														Share
 													</p>
 													<img
-														src="../../images/icons/instagram.svg"
+														src="/images/icons/instagram.svg"
 														alt="Instragram Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/twitter.svg"
+														src="/images/icons/twitter.svg"
 														alt="Twitter Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/facebook.svg"
+														src="/images/icons/facebook.svg"
 														alt="Facebook Icon"
 														class="modal-icon"
 													/>
 													<img
-														src="../../images/icons/share.svg"
+														src="/images/icons/share.svg"
 														alt="Share Icon"
 														class="modal-icon"
 													/>
@@ -1625,7 +1756,7 @@
 			</section>
 			<section class="collection__imgs">
 				<div class="row">
-					<div class="col-xs-12 col-md">
+					<div class="col-xs-12 col-md-4">
 						<!-- Item 1 -->
 						<div
 							class="collection__item"
@@ -1633,7 +1764,7 @@
 							data-bs-target="#seating-modal-1"
 						>
 							<img
-								src="../../images/collection/seating/seating-1.jpeg"
+								src="/images/collection/seating/seating-1.jpeg"
 								alt="Seating Item 1"
 								class="collection__img"
 							/>
@@ -1642,7 +1773,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-xs-12 col-md">
+					<div class="col-xs-12 col-md-4">
 						<!-- Item 2 -->
 						<div
 							class="collection__item"
@@ -1650,7 +1781,7 @@
 							data-bs-target="#seating-modal-2"
 						>
 							<img
-								src="../../images/collection/seating/seating-2.jpeg"
+								src="/images/collection/seating/seating-2.jpeg"
 								alt="Seating Item 2"
 								class="collection__img"
 							/>
@@ -1659,7 +1790,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-xs-12 col-md">
+					<div class="col-xs-12 col-md-4">
 						<!-- Item 3 -->
 						<div
 							class="collection__item"
@@ -1667,7 +1798,7 @@
 							data-bs-target="#seating-modal-3"
 						>
 							<img
-								src="../../images/collection/seating/seating-3.png"
+								src="/images/collection/seating/seating-3.png"
 								alt="Seating Item 3"
 								class="collection__img"
 							/>
@@ -1686,7 +1817,7 @@
 							data-bs-target="#seating-modal-4"
 						>
 							<img
-								src="../../images/collection/seating/seating-4.png"
+								src="/images/collection/seating/seating-4.png"
 								alt="Seating Item 4"
 								class="collection__img"
 							/>
@@ -1703,7 +1834,7 @@
 							data-bs-target="#seating-modal-5"
 						>
 							<img
-								src="../../images/collection/seating/seating-5.png"
+								src="/images/collection/seating/seating-5.png"
 								alt="Seating Item 5"
 								class="collection__img"
 							/>
@@ -1720,7 +1851,7 @@
 							data-bs-target="#seating-modal-6"
 						>
 							<img
-								src="../../images/collection/seating/seating-6.png"
+								src="/images/collection/seating/seating-6.png"
 								alt="Seating Item 6"
 								class="collection__img"
 							/>
@@ -1739,7 +1870,7 @@
 							data-bs-target="#seating-modal-7"
 						>
 							<img
-								src="../../images/collection/seating/seating-7.png"
+								src="/images/collection/seating/seating-7.png"
 								alt="Seating Item 7"
 								class="collection__img"
 							/>
@@ -1756,7 +1887,7 @@
 							data-bs-target="#seating-modal-8"
 						>
 							<img
-								src="../../images/collection/seating/seating-8.png"
+								src="/images/collection/seating/seating-8.png"
 								alt="Seating Item 8"
 								class="collection__img"
 							/>
@@ -1773,7 +1904,7 @@
 							data-bs-target="#seating-modal-9"
 						>
 							<img
-								src="../../images/collection/examples/example-item.jpg"
+								src="/images/collection/examples/example-item.jpg"
 								alt="Seating Item 9"
 								class="collection__img black-border"
 							/>
@@ -1800,14 +1931,14 @@
 					>
 						<form action="" class="mailing-list__form">
 							<div class="row">
-								<div class="col-xs-12 col-md-8">
+								<div class="col-xs-12 col-md-8 mobile-input">
 									<input
 										class="mailing-list__email-input off-white-border black-bg placeholder__white"
 										type="email"
 										placeholder="enter email address"
 									/>
 								</div>
-								<div class="col-xs-12 col-md-4">
+								<div class="col-xs-12 col-md-4 mobile-input">
 									<input
 										class="mailing-list__submit-btn white-bg black-text"
 										type="submit"
@@ -1820,19 +1951,19 @@
 					<div class="mailing-list__icons">
 						<a href="/">
 							<img
-								src="../../images/icons/white/facebook.svg"
+								src="/images/icons/white/facebook.svg"
 								alt="Facebook Icon"
 							/>
 						</a>
 						<a href="/">
 							<img
-								src="../../images/icons/white/instagram.svg"
+								src="/images/icons/white/instagram.svg"
 								alt="Instagram Icon"
 							/>
 						</a>
 						<a href="/">
 							<img
-								src="../../images/icons/white/pinterest.svg"
+								src="/images/icons/white/pinterest.svg"
 								alt="Pinterest Icon"
 							/>
 						</a>
@@ -1844,7 +1975,7 @@
 			<div class="row footer__top">
 				<div class="col">
 					<img
-						src="../../images/logos/logo-black.svg"
+						src="/images/logos/logo-black.svg"
 						alt="The Warehouse"
 						class="footer__logo"
 					/>
@@ -1857,7 +1988,7 @@
 						<div class="col">
 							<a href="/">
 								<img
-									src="../../images/icons/facebook.svg"
+									src="/images/icons/facebook.svg"
 									alt="Facebook Icon"
 									class="footer__icon"
 								/>
@@ -1866,7 +1997,7 @@
 						<div class="col">
 							<a href="/">
 								<img
-									src="../../images/icons/twitter.svg"
+									src="/images/icons/twitter.svg"
 									alt="Instagram Icon"
 									class="footer__icon"
 								/>
@@ -1875,7 +2006,7 @@
 						<div class="col">
 							<a href="/">
 								<img
-									src="../../images/icons/pinterest.svg"
+									src="/images/icons/pinterest.svg"
 									alt="Pinterest Icon"
 									class="footer__icon"
 								/>
@@ -1914,9 +2045,12 @@
 					</a>
 				</div>
 				<div class="col footer__cta">
-					<button class="btn navbar__btn" type="submit">
+					<a
+						class="btn navbar__btn booking-btn"
+						href="../contact.html"
+					>
 						Book an Appointment
-					</button>
+					</a>
 					<p class="small">Tues-Sat 10-1 By Appointment Only</p>
 				</div>
 			</div>
@@ -1927,6 +2061,6 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="../../js/index.js"></script>
+		<script src="/js/index.js"></script>
 	</body>
 </html>

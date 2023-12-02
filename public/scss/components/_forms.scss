@@ -1,0 +1,34 @@
+label {
+	color: $black;
+	font-family: $display;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+input {
+	width: 27.4375rem;
+	padding: 1.03125rem 2rem;
+	border-radius: 0.25rem;
+	border: 2px solid $black-50;
+	margin-bottom: 1.3rem;
+	max-width: 100%;
+}
+
+textarea {
+	width: 27.4375rem;
+	padding: 1.03125rem 2rem;
+	border-radius: 0.25rem;
+	border: 2px solid $black-50;
+	margin-bottom: 1.3rem;
+	max-width: 100%;
+}
+
+.placeholder__white::placeholder {
+	color: $white;
+}
+
+.placeholder__black::placeholder {
+	color: $black;
+}

@@ -1,0 +1,99 @@
+.modal {
+	top: 6rem !important;
+	--bs-modal-width: 787px;
+	height: 794px;
+	--bs-modal-padding: 3.25rem;
+
+	.collection-modal-footer {
+		margin-top: 1rem;
+		padding-bottom: 3.25rem !important;
+	}
+
+	.container-fluid,
+	.row,
+	.col-md-6 {
+		padding: 0;
+	}
+
+	.modal-body {
+		padding-bottom: 0rem;
+	}
+
+	.modal-carousel-item img {
+		width: 641px;
+		height: 336px;
+		border-radius: 4px;
+		background: $black-50;
+	}
+
+	.modal-row {
+		margin: 1rem 0 0.25rem;
+
+		.col {
+			padding: 0.5rem;
+		}
+
+		a {
+			padding: 0;
+		}
+	}
+
+	.modal-middle-row {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.modal-big-img {
+		width: 456px;
+		height: 320px;
+	}
+
+	.modal-small-img {
+		width: 128px;
+		height: 96px;
+	}
+
+	.modal-text {
+		margin-bottom: 0;
+		color: $black;
+		font-family: $body;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%; /* 25.2px */
+		margin-right: 1rem;
+	}
+
+	.modal-icon {
+		width: 22px;
+		height: 22px;
+		margin: 0 0.5rem;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.modal-desc-title-row {
+		margin-bottom: 0.5rem;
+	}
+
+	.modal-desc-title {
+		color: $black-75;
+		font-family: $body;
+		font-size: 0.875rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%; /* 19.6px */
+		margin-bottom: 0.5rem;
+	}
+
+	.modal-desc-body {
+		color: $black;
+		font-family: $body;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%; /* 22.4px */
+	}
+}

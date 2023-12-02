@@ -1,0 +1,162 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 576px) {
+	.hero__img,
+	.ctas,
+	.reviews,
+	.showroom__left,
+	.mailing-list__icons,
+	.hr-container,
+	.footer__top,
+	.footer__socials,
+	.footer__links,
+	.footer__address,
+	.footer__cta {
+		display: none !important;
+	}
+
+	.hero {
+		margin-bottom: 1.7rem;
+	}
+
+	.hero__img-mobile {
+		display: block !important;
+		margin-top: 6.25rem;
+	}
+
+	.mobile-cta {
+		display: flex;
+		margin-bottom: 2rem;
+
+		.mobile-cta__h1 {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	.showroom {
+		text-align: center !important;
+
+		.showroom__right {
+			padding: 5rem 1.5rem !important;
+		}
+
+		.showroom__h2 {
+			font-size: 2.5rem;
+		}
+
+		.showroom__h3 {
+			font-size: 1rem;
+		}
+	}
+
+	.mailing-list {
+		padding: 2rem 0 0 !important;
+
+		.mailing-list__title {
+			font-size: 2.5rem;
+		}
+
+		.mailing-list__paragraph {
+			font-size: 1rem;
+		}
+	}
+
+	.mailing-list__email-input,
+	.mailing-list__submit-btn {
+		width: 80% !important;
+	}
+
+	.mobile-input {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.mobile-cta__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		/* margin: 1.7rem 1.5rem 2.5rem; */
+	}
+
+	.collection__imgs {
+		.collection__img {
+			width: 342px !important;
+			// height: 430px !important;
+		}
+	}
+
+	.collection__item {
+		align-items: center !important;
+		max-width: 100% !important;
+	}
+
+	.footer {
+		padding: 1.5rem 3.25rem;
+
+		.footer__mobile-link {
+			display: flex !important;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 1rem 0;
+			font-family: $display;
+			font-size: 2rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			color: $black;
+		}
+
+		.footer__mobile-bottom {
+			text-align: center;
+			margin-top: 1.5rem;
+
+			.footer__mobile-address {
+				color: $black;
+				font-family: $body-bold;
+				font-size: 1rem;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 140%; /* 22.4px */
+			}
+
+			.footer__mobile-logo {
+				margin-top: 2rem;
+			}
+
+			.footer__socials-mobile {
+				margin-top: 2rem;
+
+				a {
+					padding: 0;
+				}
+			}
+
+			.footer__mobile-copyright {
+				color: $black;
+				font-family: $display;
+				font-size: 1rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 127%; /* 20.32px */
+				margin-top: 2rem;
+			}
+		}
+	}
+}
+
+// /* Smartphones (portrait and landscape) ----------- */
+// @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+// 	/* Styles */
+// }
+
+// /* Smartphones (landscape) ----------- */
+// @media only screen and (min-width: 321px) {
+// 	/* Styles */
+// }
+
+// /* Smartphones (portrait) ----------- */
+// @media only screen and (max-width: 320px) {
+// 	/* Styles */
+// }

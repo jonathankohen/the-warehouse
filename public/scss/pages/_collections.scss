@@ -1,0 +1,46 @@
+.marquee {
+	height: 13rem;
+}
+
+.marquee__section-link {
+	color: $black;
+	font-family: $display;
+	font-size: 221.565px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.marquee__section-img {
+	border-radius: 2.103px;
+	margin-bottom: 9rem;
+}
+
+.marquee__section-link-1:hover {
+	color: $terr;
+}
+
+.marquee__section-link-2:hover {
+	color: $blue;
+}
+
+.marquee__section-link-3:hover {
+	color: $green;
+}
+
+.marquee__section-link-4:hover {
+	color: $lellow;
+}
+
+.marquee__section-link-5:hover {
+	color: $terr;
+}
+
+.marquee__section-link-6:hover {
+	color: $blue;
+}
+
+.marquee__section-link-7:hover {
+	color: $green;
+}

@@ -331,10 +331,5 @@ $(document).ready(function () {
 		}
 	}
 
-	$('.collection-share-btn').click(function () {
-		navigator.clipboard.writeText(window.location.href);
-		const tooltip = new bootstrap.Tooltip(this);
-		tooltip.show();
-		tooltip.disable();
-	});
+	const init = () => {};
 });

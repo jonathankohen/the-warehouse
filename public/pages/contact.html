@@ -18,10 +18,10 @@
 				<div class="container-fluid">
 					<a
 						class="navbar-brand navbar__logo-link"
-						href="../index.html"
+						href="/index.html"
 					>
 						<img
-							src="../images/logos/short-logo-black.svg"
+							src="/images/logos/short-logo-black.svg"
 							alt="The Warehouse"
 							class="navbar__logo"
 						/>
@@ -45,15 +45,17 @@
 							<li class="nav-item">
 								<a
 									class="nav-link navbar__link"
-									href="./pages/collections.html"
+									id="navbar__link-collections"
+									href="/pages/collections.html"
 								>
 									Collections
 								</a>
 							</li>
-							<li class="nav-item px-5">
+							<li class="nav-item">
 								<a
 									class="nav-link navbar__link"
-									href="./about.html"
+									id="navbar__link-about"
+									href="/pages/about.html"
 								>
 									About
 								</a>
@@ -61,15 +63,19 @@
 							<li class="nav-item">
 								<a
 									class="nav-link navbar__link"
-									href="./contact.html"
+									id="navbar__link-contact"
+									href="/pages/contact.html"
 								>
 									Contact
 								</a>
 							</li>
 						</ul>
-						<button class="btn navbar__btn" type="submit">
+						<a
+							class="btn navbar__btn booking-btn"
+							href="/pages/contact.html"
+						>
 							Book an Appointment
-						</button>
+						</a>
 					</div>
 				</div>
 			</nav>
@@ -79,7 +85,7 @@
 				<nav class="breadcrumb__nav" aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item">
-							<a href="../../index.html" class="breadcrumb__link">
+							<a href="/index.html" class="breadcrumb__link">
 								Home
 							</a>
 						</li>
@@ -130,6 +136,7 @@
 									<input
 										type="text"
 										placeholder="Enter Subject"
+										id="contact_subject"
 									/>
 								</div>
 							</div>
@@ -163,9 +170,9 @@
 							<div class="row">
 								<div class="col">
 									<h6>Facebook</h6>
-									<p>/thewarehouse</p>
+									<a href="#">/thewarehouse</a>
 									<img
-										src="../images/misc/hr.svg"
+										src="/images/misc/hr.svg"
 										alt="Horizontal Rule"
 										class="contact-info__hr"
 									/>
@@ -174,9 +181,9 @@
 							<div class="row">
 								<div class="col">
 									<h6>Instagram</h6>
-									<p>@thewarehouse</p>
+									<a href="#">@thewarehouse</a>
 									<img
-										src="../images/misc/hr.svg"
+										src="/images/misc/hr.svg"
 										alt="Horizontal Rule"
 										class="contact-info__hr"
 									/>
@@ -185,9 +192,9 @@
 							<div class="row">
 								<div class="col">
 									<h6>Email</h6>
-									<p>info@thewarehousevintage.com</p>
+									<a href="#">info@thewarehousevintage.com</a>
 									<img
-										src="../images/misc/hr.svg"
+										src="/images/misc/hr.svg"
 										alt="Horizontal Rule"
 										class="contact-info__hr"
 									/>
@@ -199,7 +206,7 @@
 				<div class="row contact__bottom-row">
 					<div class="col contact-info__img-container">
 						<img
-							src="../images/contact/contact.png"
+							src="/images/contact/contact.png"
 							alt="Image of Customer Perusing in The Warehouse"
 						/>
 						<p class="contact-info__address">
@@ -215,7 +222,7 @@
 				<div class="row footer__top">
 					<div class="col">
 						<img
-							src="../images/logos/logo-black.svg"
+							src="/images/logos/logo-black.svg"
 							alt="The Warehouse"
 							class="footer__logo"
 						/>
@@ -228,7 +235,7 @@
 							<div class="col">
 								<a href="https://facebook.com">
 									<img
-										src="../images/icons/facebook.svg"
+										src="/images/icons/facebook.svg"
 										alt="Facebook Icon"
 										class="footer__icon"
 									/>
@@ -237,7 +244,7 @@
 							<div class="col">
 								<a href="https://instagram.com">
 									<img
-										src="../images/icons/instagram.svg"
+										src="/images/icons/instagram.svg"
 										alt="Instagram Icon"
 										class="footer__icon"
 									/>
@@ -246,7 +253,7 @@
 							<div class="col">
 								<a href="https://pinterest.com">
 									<img
-										src="../images/icons/pinterest.svg"
+										src="/images/icons/pinterest.svg"
 										alt="Pinterest Icon"
 										class="footer__icon"
 									/>
@@ -323,9 +330,12 @@
 						</a>
 					</div>
 					<div class="col footer__cta">
-						<button class="btn navbar__btn" type="submit">
+						<a
+							class="btn navbar__btn booking-btn"
+							href="./contact.html"
+						>
 							Book an Appointment
-						</button>
+						</a>
 						<p class="small">Tues-Sat 10-1 By Appointment Only</p>
 					</div>
 				</div>

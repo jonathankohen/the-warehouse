@@ -1,0 +1,18 @@
+.collection__item {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	transition: transform 0.2s ease-out;
+}
+
+.collection__item:hover {
+	transform: scale(1.05);
+}
+
+.collection__img {
+	width: 384px;
+	height: 456px;
+	margin: 10.667px;
+	border-radius: 6px;
+	cursor: pointer;
+}

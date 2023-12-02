@@ -1,0 +1,375 @@
+.hero {
+	display: flex;
+	justify-content: center;
+
+	.hero__img {
+		margin-top: 6.25rem;
+	}
+}
+
+.hero__img-mobile {
+	display: none !important;
+}
+
+.hero__logo {
+	padding: 4.5rem;
+}
+
+.hero__left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $black;
+}
+
+.hero__right {
+	padding: 0;
+}
+
+/* Home Page: Calls to Action */
+
+.ctas {
+	padding: 2rem;
+}
+
+.cta {
+	padding-top: 1.75em;
+}
+
+.cta-left {
+	display: flex;
+	flex-direction: column;
+}
+
+.cta-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cta-h3 {
+	color: $black;
+	font-family: $display;
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 111.023%; /* 2.70619rem */
+	text-align: center;
+	white-space: nowrap;
+}
+
+.cta-btn-container {
+	margin-top: 2rem;
+}
+
+.mobile-cta {
+	display: none;
+}
+
+.mobile-cta__h1 {
+	color: $black;
+	font-family: $display;
+	font-size: 2.1rem;
+	font-style: normal;
+	line-height: 124%; /* 3.255rem */
+}
+
+.mobile-cta__btn {
+	height: 3.25rem;
+	padding: 0.625rem 2rem;
+	border-radius: 0.25rem;
+	background: $black;
+	color: #f9f9f8;
+	font-family: $body;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.55rem;
+}
+
+/* Home Page: Collections */
+
+.collections-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.75rem;
+}
+
+.collections-col-bottom {
+	padding: 0 0.75rem;
+}
+
+.collections-section__img {
+	cursor: pointer;
+	padding-bottom: 1.5rem;
+	transition: transform 0.2s ease-out;
+	/* margin: 24px 0; */
+}
+
+.collections-section__img:hover {
+	transform: scale(1.05);
+}
+
+.collections__overlay {
+	position: relative;
+}
+
+.collections__overlay-text {
+	font-family: $display;
+	font-size: 38px;
+	font-weight: normal;
+	color: $white;
+	position: absolute;
+}
+
+#yellow-chair {
+	max-width: fit-content;
+}
+
+/* Home Page: Show Room */
+
+.showroom__left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $black;
+	padding: 0;
+}
+
+.showroom__right {
+	background-color: $black;
+	padding: 5.5rem;
+}
+
+.showroom__h2 {
+	color: $white;
+	font-family: $display;
+	font-size: 3.6875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	white-space: nowrap;
+	margin-bottom: 1rem;
+}
+
+.showroom__h3 {
+	color: $white;
+	font-family: $body;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 129.023%; /* 1.61281rem */
+}
+
+#showroom__btn {
+	display: inline-flex;
+	margin: 1.75rem 0;
+
+	&:hover {
+		background-color: $dark-gray !important;
+		color: $black !important;
+	}
+}
+
+/* Home Page: Mailing List */
+
+.mailing-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 6.5rem 0 6rem;
+}
+
+.mailing-list__title {
+	color: $black;
+	text-align: center;
+	font-size: 4rem;
+	line-height: 5.08rem;
+}
+
+.mailing-list__paragraph {
+	color: $black;
+	text-align: center;
+	font-family: $body;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 127%; /* 1.5875rem */
+}
+
+.mailing-list__form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 0;
+}
+
+.mailing-list__email-input {
+	height: 3.25rem;
+	color: $black-50;
+	border-color: $black-50;
+	outline: $black-50;
+	transition: 0.3s;
+}
+
+.mailing-list__email-input-active {
+	color: $black-75;
+	border-color: $black-75;
+	outline: $black-75;
+	transition: 0.3s;
+}
+
+.mailing-list__email-input-active::placeholder {
+	color: $black-75;
+	transition: 0.3s;
+}
+
+.mailing-list__email-input-error {
+	color: $error;
+	border-color: $error;
+	outline: $error;
+	transition: 0.3s;
+}
+
+.mailing-list__email-input-error::placeholder {
+	color: $error;
+	transition: 0.3s;
+}
+
+.mailing-list__email-input-error-text {
+	color: $error-dark;
+	font-family: $body;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 140%;
+	transition: 0.3s;
+}
+
+.mailing-list__submit-btn {
+	height: 3.25rem;
+	padding: 0.625rem 2rem;
+	border-radius: 0.25rem;
+	background-color: $black-50;
+	color: $white;
+	font-family: $body;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.55rem;
+	border: none;
+	transition: 0.3s;
+}
+
+.mailing-list__submit-btn:hover {
+	background-color: $black-75;
+	color: $white;
+}
+
+.mailing-list__submit-btn:disabled {
+	background-color: $black-50;
+	color: $white;
+}
+
+.mailing-list__submit-btn-active {
+	background-color: $black;
+}
+
+.mailing-list__submit-btn-active:hover {
+	background-color: $black-75;
+}
+
+.mailing-list__submit-btn-error {
+	background-color: $error;
+}
+
+.mailing-list__submit-btn-error:hover {
+	background-color: $error-dark;
+}
+
+/* Home Page: Reviews */
+
+.reviews {
+	padding: 3rem 0 4rem 2rem; /* was 6rem */
+}
+
+.reviews__arrows {
+	margin: 3.75rem 0;
+	cursor: pointer;
+}
+
+#reviews__left-arrow {
+	margin-right: 5rem;
+}
+
+.reviews__list {
+	display: flex;
+	overflow: hidden;
+}
+
+.reviews__h2 {
+	color: $black;
+	font-family: $display;
+	font-size: 2.4375rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 111.023%; /* 2.70619rem */
+}
+
+.review {
+	width: 13.3125rem;
+	height: 18.25rem;
+	flex-shrink: 0;
+	border-radius: 0.25rem;
+	background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.03) 0%,
+			rgba(0, 0, 0, 0.03) 100%
+		),
+		#eeeeec;
+	margin: 0 1rem;
+	padding: 0.5rem 1rem;
+}
+
+.review__author {
+	color: $black;
+	font-family: $display;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 257.023%; /* 3.21281rem */
+}
+
+.review__text {
+	color: $black;
+	font-family: $body;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 182.023%; /* 1.82025rem */
+}
+
+.review__btn {
+	font-size: 16px;
+	padding: 0.75rem 2rem;
+	text-decoration: none;
+	color: $black;
+	text-align: center;
+	font-family: $body;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 155%; /* 1.55rem */
+	border-radius: 0.25rem;
+	border: 2px solid $black;
+	white-space: nowrap;
+}
+
+.review__btn:hover {
+	background-color: $black;
+	color: $white;
+}

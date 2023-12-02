@@ -1,0 +1,71 @@
+button {
+	padding: 0.75rem 2rem;
+	border-radius: 0.25rem;
+}
+
+.btn-text {
+	color: $white;
+	font-family: $body;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 182.023%; /* 1.82025rem */
+}
+
+@mixin solid-btn {
+	font-family: $body;
+	padding: 0.875rem 2rem;
+	border-radius: 0.25rem;
+	font-size: 1rem;
+	line-height: normal;
+	outline: none;
+	border: none;
+	border-radius: 0.25rem;
+	white-space: nowrap;
+	transition: 0.3s;
+}
+
+.solid-black-btn {
+	@include solid-btn;
+	background-color: $black;
+	color: $white;
+
+	&:hover {
+		color: $white;
+		background-color: $black-75;
+	}
+}
+
+.solid-white-btn {
+	@include solid-btn;
+	background-color: $white;
+	color: $black;
+
+	&:hover {
+		color: $white;
+		background-color: $black;
+	}
+}
+
+@mixin outline-btn {
+	font-family: $body;
+	font-style: normal;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 155%; /* 1.55rem */
+	padding: 0.75rem 2rem;
+	text-decoration: none;
+	border-radius: 0.25rem;
+	white-space: nowrap;
+	transition: 0.3s;
+}
+
+.black-outline-btn {
+	@include outline-btn;
+	color: $black;
+	border: 2px solid $black;
+
+	&:hover {
+		background-color: $black;
+		color: $white;
+	}
+}

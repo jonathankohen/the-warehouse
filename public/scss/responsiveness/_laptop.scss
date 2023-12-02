@@ -1,0 +1,47 @@
+/* Large devices (laptops/desktops, 992px and DOWN) */
+@media only screen and (max-width: 992px) {
+	.ctas {
+		display: none !important;
+	}
+
+	.separator {
+		height: 120px;
+	}
+
+	.mobile-cta {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+
+	// .mailing-list__email-input,
+	// .mailing-list__submit-btn,
+	// .mobile-cta__btn {
+	// 	width: 100% !important;
+	// }
+
+	.mobile-cta__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		/* margin: 1.7rem 1.5rem 2.5rem; */
+	}
+
+	.footer__cta {
+		display: none !important;
+	}
+}
+
+/* Laptops Only ----------- */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.cta h2 {
+		font-size: 3.5rem;
+	}
+
+	.cta-h3 {
+		font-size: 1.5rem;
+	}
+}
