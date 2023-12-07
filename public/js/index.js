@@ -85,6 +85,12 @@ $(document).ready(function () {
 		}
 	});
 
+	/** Homepage Hero Width */
+
+	// let containerWidth = $('.collections-container-1').width()
+	// let newHeroWidth = (containerWidth - 624) / 2
+	// $('.hero').css('width', newHeroWidth)
+
 	/** Review Carousel */
 
 	const reviews = [
@@ -134,7 +140,7 @@ $(document).ready(function () {
 	const leftActive = () => {
 		$('#reviews__left-arrow').attr(
 			'src',
-			'./images/icons/left-arrow-active.svg',
+			'/images/icons/left-arrow-active.svg',
 		);
 	};
 
@@ -209,11 +215,11 @@ $(document).ready(function () {
 	});
 
 	$('.mailing-list__form').submit(function (e) {
+		e.preventDefault();
+
 		const email = emailInput.val();
 
 		if (!validateEmail(email)) {
-			e.preventDefault();
-
 			const errorText = $('<p/>', {
 				class: 'mailing-list__email-input-error-text',
 				text: 'Please Enter Valid Email Address',
@@ -228,7 +234,15 @@ $(document).ready(function () {
 			emailInput.attr('placeholder', 'Invalid email address');
 
 			emailInputRow.append(errorText);
+
+			return false;
 		}
+
+		const mailingListModal = new bootstrap.Modal(
+			document.getElementById('mailing-list-modal'),
+		);
+
+		mailingListModal.show();
 	});
 
 	/** FAQ Dropdowns */
@@ -281,7 +295,7 @@ $(document).ready(function () {
 				class: `marquee__section-link marquee__section-link-${
 					index + 1
 				}`,
-				href: `./collection/${section}.html`,
+				href: `/pages/collection/${section}.html`,
 				alt: `${sectionDisplay} Collection`,
 				text: sectionDisplay,
 			});
@@ -337,4 +351,8 @@ $(document).ready(function () {
 		tooltip.show();
 		tooltip.disable();
 	});
+
+	// const init = () => {
+
+	// }
 });

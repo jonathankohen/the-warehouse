@@ -1,0 +1,13 @@
+.breadcrumb {
+	--bs-breadcrumb-divider-color: $black-75;
+}
+
+.breadcrumb__nav {
+	margin: 1rem 0 2rem;
+}
+
+.breadcrumb__link {
+	padding: 0;
+	color: $black-75;
+	font-weight: 400;
+}

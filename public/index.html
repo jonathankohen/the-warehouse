@@ -10,13 +10,13 @@
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="/css/style.css" />
 		<link
 			rel="icon"
 			type="image/svg+xml"
 			href="/images/icons/favicon.svg"
 		/>
 		<link rel="icon" type="image/png" href="/images/icons/favicon.png" />
+		<link rel="stylesheet" href="/css/style.css" />
 
 		<title>The Warehouse</title>
 
@@ -70,10 +70,7 @@
 		<header>
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
-					<a
-						class="navbar-brand navbar__logo-link"
-						href="/index.html"
-					>
+					<a class="navbar-brand navbar__logo-link" href="/">
 						<img
 							src="/images/logos/short-logo-black.svg"
 							alt="The Warehouse"
@@ -154,9 +151,7 @@
 							<h2>Your Personal curators of vintage furniture</h2>
 						</div>
 						<div class="cta col-xs-12 col-md-6">
-							<div
-								class="row d-flex align-items-center flex-nowrap"
-							>
+							<div class="row d-flex align-items-center">
 								<div class="col cta-col">
 									<h3 class="cta-h3">
 										Explore the Warehouse
@@ -206,119 +201,125 @@
 					</div>
 				</section>
 				<section class="collections">
-					<div class="row row-cols-1 row-cols-md-2">
-						<div class="col collections-col">
-							<!-- Seating -->
-							<picture>
-								<source
-									media="(min-width:768px)"
-									srcset="
-										/images/collections/desktop/seating.svg
-									"
-								/>
-								<img
-									src="/images/collections/mobile/seating.svg"
-									alt="Seating Collection"
-									class="collections-section__img"
-									onclick="location.href='/pages/collection/seating.html';"
-								/>
-							</picture>
-							<!-- Rugs -->
-							<picture>
-								<source
-									media="(min-width:768px)"
-									srcset="
-										/images/collections/desktop/rugs.svg
-									"
-								/>
-								<img
-									src="/images/collections/mobile/rugs.svg"
-									alt="Rugs Collection"
-									class="collections-section__img"
-									onclick="location.href='/pages/collection/rugs.html';"
-								/>
-							</picture>
-						</div>
-						<div class="col collections-col">
-							<!-- Tables -->
-							<picture>
-								<source
-									media="(min-width:768px)"
-									srcset="
-										/images/collections/desktop/tables.svg
-									"
-								/>
-								<img
-									src="/images/collections/mobile/tables.svg"
-									alt="Tables Collection"
-									class="collections-section__img"
-									onclick="location.href='/pages/collection/tables.html';"
-								/>
-							</picture>
-							<!-- Storage -->
-							<picture>
-								<source
-									media="(min-width:768px)"
-									srcset="
-										/images/collections/desktop/storage.svg
-									"
-								/>
-								<img
-									src="/images/collections/mobile/storage.svg"
-									alt="Storage Collection"
-									class="collections-section__img"
-									onclick="location.href='/pages/collection/storage.html';"
-								/>
-							</picture>
-							<!-- Lighting -->
-							<picture>
-								<source
-									media="(min-width:768px)"
-									srcset="
-										/images/collections/desktop/lighting.svg
-									"
-								/>
-								<img
-									src="/images/collections/mobile/lighting.svg"
-									alt="Lighting Collection"
-									class="collections-section__img"
-									onclick="location.href='/pages/collection/lighting.html';"
-								/>
-							</picture>
+					<div class="collections-container-1">
+						<div class="row row-cols-1 row-cols-md-2">
+							<div class="col collections-col">
+								<!-- Seating -->
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											/images/collections/desktop/seating.svg
+										"
+									/>
+									<img
+										src="/images/collections/mobile/seating.svg"
+										alt="Seating Collection"
+										class="collections-section__img"
+										onclick="location.href='/pages/collection/seating.html';"
+									/>
+								</picture>
+								<!-- Rugs -->
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											/images/collections/desktop/rugs.svg
+										"
+									/>
+									<img
+										src="/images/collections/mobile/rugs.svg"
+										alt="Rugs Collection"
+										class="collections-section__img"
+										onclick="location.href='/pages/collection/rugs.html';"
+									/>
+								</picture>
+							</div>
+							<div class="col collections-col">
+								<!-- Tables -->
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											/images/collections/desktop/tables.svg
+										"
+									/>
+									<img
+										src="/images/collections/mobile/tables.svg"
+										alt="Tables Collection"
+										class="collections-section__img"
+										onclick="location.href='/pages/collection/tables.html';"
+									/>
+								</picture>
+								<!-- Storage -->
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											/images/collections/desktop/storage.svg
+										"
+									/>
+									<img
+										src="/images/collections/mobile/storage.svg"
+										alt="Storage Collection"
+										class="collections-section__img"
+										onclick="location.href='/pages/collection/storage.html';"
+									/>
+								</picture>
+								<!-- Lighting -->
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											/images/collections/desktop/lighting.svg
+										"
+									/>
+									<img
+										src="/images/collections/mobile/lighting.svg"
+										alt="Lighting Collection"
+										class="collections-section__img"
+										onclick="location.href='/pages/collection/lighting.html';"
+									/>
+								</picture>
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xs-12 col-md-8 collections-col">
-							<!-- Art -->
-							<picture>
-								<source
-									media="(min-width:768px)"
-									srcset="/images/collections/desktop/art.svg"
-								/>
-								<img
-									src="/images/collections/mobile/art.svg"
-									alt="Art Collection"
-									class="collections-section__img collections-section__img-bottom"
-									onclick="location.href='/pages/collection/art.html';"
-								/>
-							</picture>
-						</div>
-						<div class="col-xs-12 col-md-4 collections-col">
-							<!-- Misc. -->
-							<picture>
-								<source
-									media="(min-width:768px)"
-									srcset="
-										/images/collections/desktop/misc.svg
-									"
-								/>
-								<img
-									src="/images/collections/mobile/misc.svg"
-									alt="Misc. Collection"
-									class="collections-section__img collections-section__img-bottom"
-									onclick="location.href='/pages/collection/misc.html';"
-								/>
-							</picture>
+					<div class="collections-container-2">
+						<div class="row">
+							<div class="col-xs-12 col-md-8 collections-col">
+								<!-- Art -->
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											/images/collections/desktop/art.svg
+										"
+									/>
+									<img
+										src="/images/collections/mobile/art.svg"
+										alt="Art Collection"
+										class="collections-section__img collections-section__img-bottom"
+										onclick="location.href='/pages/collection/art.html';"
+									/>
+								</picture>
+							</div>
+							<div class="col-xs-12 col-md-4 collections-col">
+								<!-- Misc. -->
+								<picture>
+									<source
+										media="(min-width:768px)"
+										srcset="
+											/images/collections/desktop/misc.svg
+										"
+									/>
+									<img
+										src="/images/collections/mobile/misc.svg"
+										alt="Misc. Collection"
+										class="collections-section__img collections-section__img-bottom"
+										onclick="location.href='/pages/collection/misc.html';"
+									/>
+								</picture>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -413,6 +414,56 @@
 						</div>
 					</div>
 				</section>
+				<section class="mailing-list__modals">
+					<!-- Modal 1 -->
+					<div
+						class="modal mailing-list-modal fade"
+						id="mailing-list-modal"
+						tabindex="-1"
+						aria-labelledby="mailing-list-modal-label"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-body">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col">
+												<h3>Thank You for Joining</h3>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p>
+													Welcome to the The Warehouse
+													community! We're thrilled to
+													have you on board. Get ready
+													for exclusive updates,
+													special offers, and exciting
+													news delivered straight to
+													your inbox.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div
+											class="col mailing-list-modal__btn-container"
+										>
+											<button
+												class="solid-black-btn"
+												type="btn"
+												data-bs-dismiss="modal"
+											>
+												Close
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</main>
 		<footer class="footer">
@@ -467,51 +518,51 @@
 				</div>
 				<div class="row footer__bottom">
 					<div class="col footer__links">
-						<div class="row row-cols-3">
-							<div class="col flex-nowrap">
+						<div class="row row-cols-3 footer__links-row">
+							<div class="col footer__links-col">
 								<a
 									href="/pages/collection/seating.html"
-									class="footer__link small"
+									class="footer__link small d-block"
 								>
 									Seating
 								</a>
 								<a
 									href="/pages/collection/tables.html"
-									class="footer__link small"
+									class="footer__link small d-block"
 								>
 									Tables
 								</a>
 								<a
 									href="/pages/collection/storage.html"
-									class="footer__link small"
+									class="footer__link small d-block"
 								>
 									Storage
 								</a>
 							</div>
-							<div class="col flex-nowrap">
+							<div class="col footer__links-col">
 								<a
 									href="/pages/collection/lighting.html"
-									class="footer__link small"
+									class="footer__link small d-block"
 								>
 									Lighting
 								</a>
 								<a
 									href="/pages/collection/rugs.html"
-									class="footer__link small"
+									class="footer__link small d-block"
 								>
 									Rugs
 								</a>
 								<a
 									href="/pages/collection/art.html"
-									class="footer__link small"
+									class="footer__link small d-block"
 								>
 									Art
 								</a>
 							</div>
-							<div class="col flex-nowrap">
+							<div class="col footer__links-col">
 								<a
 									href="/pages/collection/misc.html"
-									class="footer__link small"
+									class="footer__link small d-block"
 								>
 									Miscellaneous
 								</a>
@@ -548,7 +599,7 @@
 						<a class="btn navbar__btn booking-btn" type="submit">
 							Book an Appointment
 						</a>
-						<p class="small">Tues-Sat 10-1 By Appointment Only</p>
+						<!-- <p class="small">Tues-Sat 10-1 By Appointment Only</p> -->
 					</div>
 					<div class="footer__mobile-bottom">
 						<p class="footer__mobile-address">

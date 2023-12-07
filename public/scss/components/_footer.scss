@@ -1,0 +1,40 @@
+.footer {
+	background-color: $light-gray;
+	padding: 0 2rem 3rem;
+
+	.footer__col {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.footer__top {
+		padding-top: 3rem;
+	}
+
+	.footer__icon {
+		width: 2.25rem;
+	}
+
+	.footer__address,
+	.footer__cta {
+		text-align: center;
+	}
+
+	.footer__hr {
+		margin: 2rem 0;
+	}
+
+	.booking-btn {
+		margin-bottom: 1rem;
+	}
+
+	.footer__links-row {
+		// white-space: nowrap;
+
+		.footer__links-col {
+			// padding: 0;
+		}
+	}
+}

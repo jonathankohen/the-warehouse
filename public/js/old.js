@@ -134,7 +134,7 @@ $(document).ready(function () {
 	const leftActive = () => {
 		$('#reviews__left-arrow').attr(
 			'src',
-			'./images/icons/left-arrow-active.svg',
+			'/images/icons/left-arrow-active.svg',
 		);
 	};
 
@@ -281,7 +281,7 @@ $(document).ready(function () {
 				class: `marquee__section-link marquee__section-link-${
 					index + 1
 				}`,
-				href: `./collection/${section}.html`,
+				href: `/pages/collection/${section}.html`,
 				alt: `${sectionDisplay} Collection`,
 				text: sectionDisplay,
 			});

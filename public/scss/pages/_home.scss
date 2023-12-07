@@ -1,3 +1,5 @@
+/* Home Page: Hero */
+
 .hero {
 	display: flex;
 	justify-content: center;
@@ -11,84 +13,74 @@
 	display: none !important;
 }
 
-.hero__logo {
-	padding: 4.5rem;
-}
-
-.hero__left {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: $black;
-}
-
-.hero__right {
-	padding: 0;
-}
-
 /* Home Page: Calls to Action */
 
 .ctas {
 	padding: 2rem;
-}
 
-.cta {
-	padding-top: 1.75em;
-}
+	.cta {
+		padding-top: 1.75em;
+	}
 
-.cta-left {
-	display: flex;
-	flex-direction: column;
-}
+	.cta-left {
+		display: flex;
+		flex-direction: column;
+	}
 
-.cta-col {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+	.cta-col {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-.cta-h3 {
-	color: $black;
-	font-family: $display;
-	font-size: 1.75rem;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 111.023%; /* 2.70619rem */
-	text-align: center;
-	white-space: nowrap;
-}
+	.cta-h3 {
+		color: $black;
+		font-family: $display;
+		font-size: 1.75rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 111.023%; /* 2.70619rem */
+		text-align: center;
+		white-space: nowrap;
+	}
 
-.cta-btn-container {
-	margin-top: 2rem;
+	.cta-btn-container {
+		margin-top: 2rem;
+	}
 }
 
 .mobile-cta {
 	display: none;
-}
 
-.mobile-cta__h1 {
-	color: $black;
-	font-family: $display;
-	font-size: 2.1rem;
-	font-style: normal;
-	line-height: 124%; /* 3.255rem */
-}
+	.mobile-cta__h1 {
+		color: $black;
+		font-family: $display;
+		font-size: 2.1rem;
+		font-style: normal;
+		line-height: 124%; /* 3.255rem */
+	}
 
-.mobile-cta__btn {
-	height: 3.25rem;
-	padding: 0.625rem 2rem;
-	border-radius: 0.25rem;
-	background: $black;
-	color: #f9f9f8;
-	font-family: $body;
-	font-size: 1rem;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 1.55rem;
+	.mobile-cta__btn {
+		height: 3.25rem;
+		padding: 0.625rem 2rem;
+		border-radius: 0.25rem;
+		background: $black;
+		color: #f9f9f8;
+		font-family: $body;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.55rem;
+	}
 }
 
 /* Home Page: Collections */
+
+.collections-container-1,
+.collections-container-2 {
+	display: flex;
+	justify-content: center;
+}
 
 .collections-col {
 	display: flex;
@@ -106,7 +98,6 @@
 	cursor: pointer;
 	padding-bottom: 1.5rem;
 	transition: transform 0.2s ease-out;
-	/* margin: 24px 0; */
 }
 
 .collections-section__img:hover {
