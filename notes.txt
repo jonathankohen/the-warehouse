@@ -6,3 +6,5 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px,
 );
+
+List of what's needed from client
