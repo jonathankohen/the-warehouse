@@ -26,5 +26,4 @@ dist/
 # End of https://www.toptal.com/developers/gitignore/api/firebase,sass,grunt
 
 **/images/*
-/lib
-/notes.txt
+**/lib/*
