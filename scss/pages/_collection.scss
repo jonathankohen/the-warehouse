@@ -1,18 +1,32 @@
+/**
+ * Collection Pages
+ * ==========================================================================
+ */
+
 .collection__item {
 	display: flex;
 	flex-direction: column;
 	align-items: baseline;
 	transition: transform 0.2s ease-out;
+
+	&:hover {
+		transform: scale(1.05);
+	}
 }
 
-.collection__item:hover {
-	transform: scale(1.05);
-}
-
-.collection__img {
+.collection__item .collection__img {
 	width: 384px;
 	height: 456px;
 	margin: 10.667px;
 	border-radius: 6px;
 	cursor: pointer;
+}
+
+.collection__modal {
+	img {
+		width: 100%;
+		border-radius: 4px;
+		// width: 641px;
+		// height: 336px;
+	}
 }

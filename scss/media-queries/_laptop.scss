@@ -1,3 +1,8 @@
+/**
+ * Laptop Media Queries
+ * ==========================================================================
+ */
+
 /* Large devices (laptops/desktops, 992px and DOWN) */
 @media only screen and (max-width: 992px) {
 	.ctas {
@@ -13,21 +18,14 @@
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 2rem;
-		margin-top: 2rem;
+		margin-top: 1.5rem;
 	}
 
-	// .mailing-list__email-input,
-	// .mailing-list__submit-btn,
-	// .mobile-cta__btn {
-	// 	width: 100% !important;
-	// }
-
+	// FIXME: Tried to move this to the mobile media query, but for some reason it breaks.
 	.mobile-cta__btn {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
-		/* margin: 1.7rem 1.5rem 2.5rem; */
 	}
 
 	.footer__cta {

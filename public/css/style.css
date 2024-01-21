@@ -1,40 +1,386 @@
+/*
+ Theme Name: The Warehouse Vintage
+ Description: A custom theme for The Warehouse Vintage.
+ Author: Jonathan Kohen
+ Author URL: https://github.com/jonathankohen/the-warehouse/
+ Email: goldkode.studios@gmail.com
+*/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+	 ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+	 ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+/**
+ * Colors
+ * ==========================================================================
+ */
+/**
+ * Typography
+ * ==========================================================================
+ */
 @font-face {
   font-family: "Bebas Neue";
   src: url("/fonts/BebasNeue-Regular.ttf");
 }
-@font-face {
-  font-family: "FreeSans";
-  src: url("/fonts/FreeSans.ttf");
-}
-@font-face {
-  font-family: "FreeSans Bold";
-  src: url("/fonts/FreeSansBold.ttf");
-}
-@font-face {
-  font-family: "FreeSans Oblique";
-  src: url("/fonts/FreeSansOblique.ttf");
-}
-@font-face {
-  font-family: "FreeSans Bold Oblique";
-  src: url("/fonts/FreeSansBoldOblique.ttf");
-}
+/** Fonts */
+/** All Text */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-.small {
-  margin: 0;
-  padding: 0;
+p,
+a,
+span,
+details,
+summary {
   font-style: normal;
-  font-weight: normal;
+  line-height: normal;
 }
 
+/** Headers */
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-family: "Bebas Neue", sans-serif;
 }
 
@@ -44,7 +390,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Bebas Neue", sans-serif;
   font-size: 3.75rem;
   font-weight: 400;
   color: #181818;
@@ -72,8 +417,10 @@ h6 {
   font-size: 1.5rem;
 }
 
+/** Body */
 p {
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
 }
 
 a {
@@ -87,12 +434,42 @@ a {
 
 .small {
   color: #181818;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  line-height: 257.023%;
-  /* 2.57025rem */
 }
 
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.extra-bold {
+  font-weight: 800;
+}
+
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/**
+ * Global Utilities
+ * ==========================================================================
+ */
 .hidden {
   display: none;
 }
@@ -145,6 +522,10 @@ a {
   border: 2px solid #181818 !important;
 }
 
+/**
+ * Base Styles
+ * ==========================================================================
+ */
 * {
   margin: 0;
   padding: 0;
@@ -155,9 +536,15 @@ html {
   font-size: 16px;
 }
 
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .main-container {
+  padding: 0 1.5rem;
   overflow: auto;
-  margin-top: 6.5rem;
+  overflow-x: hidden;
 }
 
 img {
@@ -176,22 +563,26 @@ img {
   text-align: center;
 }
 
-/* Home Page: Hero */
+/**
+ * Home Page
+ * ==========================================================================
+ */
+/* Hero */
 .hero {
   display: flex;
   justify-content: center;
-}
-.hero .hero__img {
-  margin-top: 6.25rem;
 }
 
 .hero__img-mobile {
   display: none !important;
 }
 
-/* Home Page: Calls to Action */
+/* Calls to Action */
 .ctas {
   padding: 2rem;
+}
+.ctas #tagline {
+  margin: 0;
 }
 .ctas .cta {
   padding-top: 1.75em;
@@ -223,28 +614,8 @@ img {
 .mobile-cta {
   display: none;
 }
-.mobile-cta .mobile-cta__h1 {
-  color: #181818;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 2.1rem;
-  font-style: normal;
-  line-height: 124%;
-  /* 3.255rem */
-}
-.mobile-cta .mobile-cta__btn {
-  height: 3.25rem;
-  padding: 0.625rem 2rem;
-  border-radius: 0.25rem;
-  background: #181818;
-  color: #f9f9f8;
-  font-family: "FreeSans", sans-serif;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.55rem;
-}
 
-/* Home Page: Collections */
+/* Collections */
 .collections-container-1,
 .collections-container-2 {
   display: flex;
@@ -255,8 +626,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 0.75rem;
 }
 
 .collections-col-bottom {
@@ -264,9 +633,10 @@ img {
 }
 
 .collections-section__img {
-  cursor: pointer;
+  width: 100%;
   padding-bottom: 1.5rem;
   transition: transform 0.2s ease-out;
+  cursor: pointer;
 }
 
 .collections-section__img:hover {
@@ -289,7 +659,11 @@ img {
   max-width: fit-content;
 }
 
-/* Home Page: Show Room */
+/* Show Room */
+.showroom {
+  overflow: hidden;
+}
+
 .showroom__left {
   display: flex;
   flex-direction: column;
@@ -317,7 +691,7 @@ img {
 
 .showroom__h3 {
   color: #f8f8f7;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
@@ -334,7 +708,7 @@ img {
   color: #181818 !important;
 }
 
-/* Home Page: Mailing List */
+/* Mailing List */
 .mailing-list {
   display: flex;
   flex-direction: column;
@@ -353,7 +727,7 @@ img {
 .mailing-list__paragraph {
   color: #181818;
   text-align: center;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 300;
@@ -402,7 +776,7 @@ img {
 
 .mailing-list__email-input-error-text {
   color: rgba(223, 65, 55, 0.75);
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
@@ -416,7 +790,7 @@ img {
   border-radius: 0.25rem;
   background-color: rgba(24, 24, 24, 0.5);
   color: #f8f8f7;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -451,10 +825,9 @@ img {
   background-color: rgba(223, 65, 55, 0.75);
 }
 
-/* Home Page: Reviews */
+/* Reviews */
 .reviews {
-  padding: 3rem 0 4rem 2rem;
-  /* was 6rem */
+  margin-bottom: 2.5rem;
 }
 
 .reviews__arrows {
@@ -487,7 +860,7 @@ img {
   flex-shrink: 0;
   border-radius: 0.25rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 100%), #eeeeec;
-  margin: 0 1rem;
+  margin-right: 1rem;
   padding: 0.5rem 1rem;
 }
 
@@ -503,7 +876,7 @@ img {
 
 .review__text {
   color: #181818;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -511,13 +884,17 @@ img {
   /* 1.82025rem */
 }
 
+.reviews__btn-container {
+  display: flex;
+}
+
 .review__btn {
-  font-size: 16px;
+  font-size: 1rem;
   padding: 0.75rem 2rem;
   text-decoration: none;
   color: #181818;
   text-align: center;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 155%;
@@ -532,6 +909,218 @@ img {
   color: #f8f8f7;
 }
 
+/**
+ * Media Queries
+ * ==========================================================================
+ */
+/* Large devices (laptops/desktops, 992px and DOWN) */
+@media only screen and (max-width: 992px) {
+  .ctas {
+    display: none !important;
+  }
+
+  .separator {
+    height: 120px;
+  }
+
+  .mobile-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .mobile-cta__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Laptops Only ----------- */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .cta h2 {
+    font-size: 3.5rem;
+  }
+
+  .cta-h3 {
+    font-size: 1.5rem;
+  }
+}
+/* Tablets Only (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+  h1 {
+    font-size: 3.25rem;
+  }
+
+  .ctas {
+    padding: 2rem 1.25rem;
+  }
+
+  .mobile-cta__h1 {
+    margin-top: 1rem;
+  }
+
+  .mobile-cta__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-cta__btn-container .mobile-cta__btn {
+    width: 100%;
+  }
+
+  .showroom__h2 {
+    font-size: 3rem;
+  }
+
+  .showroom__h3 {
+    font-size: 1.1rem;
+  }
+}
+/* Tablets and Down ----------- */
+@media only screen and (max-width: 768px) {
+  .hero-container {
+    padding: 0 !important;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 576px) {
+  .hero__img,
+.ctas,
+.showroom__left,
+.mailing-list__icons,
+.hr-container {
+    display: none !important;
+  }
+
+  a {
+    padding: 1rem;
+  }
+
+  .hero {
+    margin-bottom: 1.7rem;
+  }
+
+  .hero__img-mobile {
+    display: block !important;
+  }
+
+  .reviews #reviews-container {
+    padding: 0;
+  }
+  .reviews #reviews-container .review__active {
+    margin-left: 0;
+  }
+  .reviews #reviews-container .reviews__h2 {
+    margin-bottom: 2.5rem;
+    color: #181818;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .reviews #reviews-container .reviews__left {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews #reviews-container .reviews__arrows {
+    margin: 2rem 0;
+    align-self: center;
+  }
+  .reviews #reviews-container #reviews__btn {
+    width: 100%;
+  }
+
+  .mobile-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .mobile-cta .mobile-cta__h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.1rem;
+    font-style: normal;
+    color: #181818;
+    line-height: 124%;
+    /* 3.255rem */
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+  .mobile-cta .mobile-cta__btn {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.55rem;
+    text-align: center;
+    padding: 0.625rem 2rem;
+    border-radius: 0.25rem;
+    background: #181818;
+    color: #f9f9f8;
+  }
+
+  .showroom {
+    text-align: center !important;
+  }
+  .showroom .showroom__right {
+    padding: 5rem 2.5rem !important;
+  }
+  .showroom .showroom__h2 {
+    font-size: 2rem;
+  }
+  .showroom .showroom__h3 {
+    font-size: 1rem;
+  }
+
+  .mailing-list {
+    padding: 2rem 0 0 !important;
+  }
+  .mailing-list .mailing-list__title {
+    font-size: 2.5rem;
+  }
+  .mailing-list .mailing-list__paragraph {
+    font-size: 1rem;
+  }
+
+  .mailing-list__email-input,
+.mailing-list__submit-btn {
+    width: 100% !important;
+  }
+
+  #showroom__btn {
+    width: auto;
+  }
+
+  .mobile-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .collection__imgs .collection__img {
+    width: 342px !important;
+  }
+
+  .collection__item {
+    align-items: center !important;
+    max-width: 100% !important;
+  }
+}
+/**
+ * About Page
+ * ==========================================================================
+ */
+.about-mobile {
+  display: none;
+}
+
+.about h1 {
+  margin: 0.25rem 0;
+}
 .about h4 {
   margin-bottom: 1rem;
 }
@@ -540,7 +1129,7 @@ img {
 }
 .about .about__top-row__imgs {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 .about .about__top-row__imgs img {
@@ -564,16 +1153,20 @@ img {
   font-weight: 800;
 }
 .about .about__tagline {
-  font-family: "FreeSans", sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem;
   color: rgba(23, 23, 23, 0.75);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 140%;
+  /* 28px */
   white-space: nowrap;
 }
 .about .metric {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
 }
 
 /* About Page: FAQ */
@@ -600,10 +1193,10 @@ img {
   line-height: normal;
 }
 .faq__row .faq__text {
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   color: #181818;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -614,6 +1207,134 @@ img {
   height: 0.5rem;
 }
 
+/* Tablets Only (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+  .about-top-img {
+    width: 500px !important;
+    height: auto !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+/* Tablets and Down ----------- */
+@media only screen and (max-width: 768px) {
+  .about-mobile {
+    display: none;
+  }
+
+  .contact-info h6 {
+    margin-top: 2rem;
+  }
+
+  .about h1 {
+    margin: 0.25rem 0;
+  }
+  .about p {
+    font-size: 0.85rem;
+  }
+  .about .left-col {
+    padding-left: 0;
+  }
+  .about .about__top-row__imgs {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .about .about__top-row__imgs .about__top-col__imgs {
+    text-align: center;
+  }
+  .about .about__top-row__imgs .about__top-col__imgs .about-top-img {
+    width: 500px !important;
+    height: auto !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .about .about__tagline {
+    font-size: 0.8rem;
+  }
+  .about .about__bottom-row {
+    margin: 2rem 0 4.25rem;
+  }
+  .about .about__bottom-row h4 {
+    margin-bottom: 0.5rem;
+  }
+  .about .about__bottom-row .solid-black-btn {
+    margin-top: 0;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 576px) {
+  .about {
+    display: none;
+  }
+
+  .about-mobile {
+    display: block;
+  }
+  .about-mobile h5 {
+    color: #181818;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .about-mobile img {
+    border-radius: 4px;
+  }
+  .about-mobile .about-mobile__top-row {
+    margin-bottom: 1rem;
+  }
+  .about-mobile .about-mobile__middle-row {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .about-mobile .about-mobile__bottom-row {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .about-mobile .mobile-about-text {
+    color: rgba(23, 23, 23, 0.75);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    /* 25.6px */
+  }
+  .about-mobile .about__tagline {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 22.4px */
+  }
+  .about-mobile .solid-black-btn {
+    width: 100%;
+  }
+
+  .faqs {
+    margin-top: 2rem;
+  }
+  .faqs h3 {
+    font-size: 1.5rem;
+  }
+  .faqs .faq__question {
+    font-size: 1rem;
+  }
+  .faqs .faq__text {
+    font-size: 0.8rem;
+  }
+
+  .metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+}
+/**
+ * Collections Page
+ * ==========================================================================
+ */
 .marquee {
   height: 13rem;
 }
@@ -661,18 +1382,21 @@ img {
   color: #647162;
 }
 
+/**
+ * Collection Pages
+ * ==========================================================================
+ */
 .collection__item {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   transition: transform 0.2s ease-out;
 }
-
 .collection__item:hover {
   transform: scale(1.05);
 }
 
-.collection__img {
+.collection__item .collection__img {
   width: 384px;
   height: 456px;
   margin: 10.667px;
@@ -680,8 +1404,21 @@ img {
   cursor: pointer;
 }
 
+.collection__modal img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/**
+ * Contact Page
+ * ==========================================================================
+ */
+.contact-submit-btn {
+  font-weight: 700;
+}
+
 .contact__top-row {
-  margin-top: 3.5rem;
+  gap: 6.5rem;
 }
 .contact__top-row .contact-form input,
 .contact__top-row .contact-form textarea {
@@ -701,7 +1438,7 @@ img {
 }
 .contact__top-row .contact-info a {
   color: rgba(23, 23, 23, 0.75);
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
@@ -710,6 +1447,7 @@ img {
   padding: 0;
 }
 .contact__top-row .contact-info .contact-info__hr {
+  display: block;
   width: 343px;
   margin: 2rem 0 3rem;
 }
@@ -725,12 +1463,84 @@ img {
 }
 .contact__bottom-row .contact-info__address {
   color: #181818;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   line-height: 140%;
   /* 28px */
   margin: 1.5rem 0;
+}
+
+/* Tablets Only (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+  .contact-info h6 {
+    margin-top: 2rem;
+  }
+
+  .contact__top-row {
+    gap: 3rem;
+  }
+
+  .contact-info__hr {
+    margin-bottom: 2rem !important;
+  }
+
+  .contact__bottom-row {
+    margin: 5.5rem 0 7rem;
+  }
+}
+/* Tablets and Down ----------- */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 576px) {
+  h1 {
+    color: #181818;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .contact__top-row {
+    gap: 0;
+  }
+
+  .contact-info {
+    margin-top: 3rem;
+  }
+  .contact-info h6 {
+    color: #181818;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 0.5rem !important;
+  }
+
+  .contact__bottom-row {
+    margin: 3rem 0;
+  }
+  .contact__bottom-row .contact-info__address {
+    color: #181818;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+/**
+ * Navbar
+ * ==========================================================================
+ */
+header {
+  margin-bottom: 5rem;
 }
 
 .navbar {
@@ -741,16 +1551,22 @@ img {
   width: 100%;
   z-index: 1000000;
   top: 0;
-  padding: 1.5rem 0;
-  margin-bottom: 2rem;
 }
 .navbar .navbar__logo {
   height: 1.375rem;
 }
+.navbar .logo-text {
+  color: #181818;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .navbar .navbar__link {
   color: rgba(24, 24, 24, 0.5);
   text-align: center;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -796,7 +1612,6 @@ img {
   }
   .navbar .navbar__logo {
     width: 8rem;
-    padding-left: 1.5rem !important;
   }
   .navbar .navbar-toggler {
     border: none !important;
@@ -807,6 +1622,8 @@ img {
   }
   .navbar .navbar-toggler .navbar-toggler-icon {
     transition: 0.3s;
+    width: 1.5rem;
+    height: 1rem;
   }
   .navbar .navbar__link {
     color: #181818;
@@ -830,8 +1647,24 @@ img {
     text-decoration-thickness: 2px;
   }
 }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 576px) {
+  .navbar__logo {
+    width: 7rem;
+    padding-left: 1rem;
+  }
+
+  .navbar-toggler {
+    padding-bottom: 0.5rem;
+  }
+}
+/**
+ * Breadcrumbs
+ * ==========================================================================
+ */
 .breadcrumb {
   --bs-breadcrumb-divider-color: $black-75;
+  margin-bottom: 0;
 }
 
 .breadcrumb__nav {
@@ -844,6 +1677,16 @@ img {
   font-weight: 400;
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 576px) {
+  .breadcrumb__nav {
+    display: none !important;
+  }
+}
+/**
+ * Button Components
+ * ==========================================================================
+ */
 button {
   padding: 0.75rem 2rem;
   border-radius: 0.25rem;
@@ -851,7 +1694,7 @@ button {
 
 .btn-text {
   color: #f8f8f7;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 182.023%;
@@ -859,11 +1702,15 @@ button {
 }
 
 .solid-black-btn {
-  font-family: "FreeSans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  line-height: normal;
   padding: 0.875rem 2rem;
   border-radius: 0.25rem;
-  font-size: 1rem;
-  line-height: normal;
   outline: none;
   border: none;
   border-radius: 0.25rem;
@@ -878,11 +1725,15 @@ button {
 }
 
 .solid-white-btn {
-  font-family: "FreeSans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  line-height: normal;
   padding: 0.875rem 2rem;
   border-radius: 0.25rem;
-  font-size: 1rem;
-  line-height: normal;
   outline: none;
   border: none;
   border-radius: 0.25rem;
@@ -893,11 +1744,11 @@ button {
 }
 .solid-white-btn:hover {
   color: #f8f8f7;
-  background-color: #181818;
+  background-color: rgba(23, 23, 23, 0.75);
 }
 
 .black-outline-btn {
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 600;
@@ -916,6 +1767,39 @@ button {
   color: #f8f8f7;
 }
 
+.white-outline-btn {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 155%;
+  /* 1.55rem */
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+  transition: 0.3s;
+  color: #f8f8f7;
+  border: 2px solid #f8f8f7;
+}
+.white-outline-btn:hover {
+  background-color: #f8f8f7;
+  color: #181818;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 576px) {
+  .solid-black-btn,
+.solid-white-btn,
+.black-outline-btn,
+.white-outline-btn {
+    width: 100%;
+  }
+}
+/**
+ * Button Components
+ * ==========================================================================
+ */
 button {
   padding: 0.75rem 2rem;
   border-radius: 0.25rem;
@@ -923,7 +1807,7 @@ button {
 
 .btn-text {
   color: #f8f8f7;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 182.023%;
@@ -931,11 +1815,15 @@ button {
 }
 
 .solid-black-btn {
-  font-family: "FreeSans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  line-height: normal;
   padding: 0.875rem 2rem;
   border-radius: 0.25rem;
-  font-size: 1rem;
-  line-height: normal;
   outline: none;
   border: none;
   border-radius: 0.25rem;
@@ -950,11 +1838,15 @@ button {
 }
 
 .solid-white-btn {
-  font-family: "FreeSans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  line-height: normal;
   padding: 0.875rem 2rem;
   border-radius: 0.25rem;
-  font-size: 1rem;
-  line-height: normal;
   outline: none;
   border: none;
   border-radius: 0.25rem;
@@ -965,11 +1857,11 @@ button {
 }
 .solid-white-btn:hover {
   color: #f8f8f7;
-  background-color: #181818;
+  background-color: rgba(23, 23, 23, 0.75);
 }
 
 .black-outline-btn {
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 600;
@@ -988,6 +1880,39 @@ button {
   color: #f8f8f7;
 }
 
+.white-outline-btn {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 155%;
+  /* 1.55rem */
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+  transition: 0.3s;
+  color: #f8f8f7;
+  border: 2px solid #f8f8f7;
+}
+.white-outline-btn:hover {
+  background-color: #f8f8f7;
+  color: #181818;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 576px) {
+  .solid-black-btn,
+.solid-white-btn,
+.black-outline-btn,
+.white-outline-btn {
+    width: 100%;
+  }
+}
+/**
+ * Forms
+ * ==========================================================================
+ */
 label {
   color: #181818;
   font-family: "Bebas Neue", sans-serif;
@@ -1023,6 +1948,10 @@ textarea {
   color: #181818;
 }
 
+/**
+ * Modals
+ * ==========================================================================
+ */
 .modal {
   top: 6rem !important;
   --bs-modal-width: 787px;
@@ -1071,7 +2000,7 @@ textarea {
 .modal .modal-text {
   margin-bottom: 0;
   color: #181818;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
@@ -1092,7 +2021,7 @@ textarea {
 }
 .modal .modal-desc-title {
   color: rgba(23, 23, 23, 0.75);
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -1102,7 +2031,7 @@ textarea {
 }
 .modal .modal-desc-body {
   color: #181818;
-  font-family: "FreeSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -1126,9 +2055,38 @@ textarea {
   margin: 1.5rem 0 3rem;
 }
 
+/**
+ * Footer Component
+ * ==========================================================================
+ */
 .footer {
   background-color: #f4f3f1;
-  padding: 0 2rem 3rem;
+  padding: 0 3.5rem 3rem;
+}
+.footer p,
+.footer a {
+  font-weight: 500;
+}
+.footer .footer__links-col a {
+  padding: 0;
+  padding-bottom: 1.25rem;
+}
+.footer .footer__address-text {
+  margin-bottom: 3.5rem;
+}
+.footer .footer__socials-row,
+.footer .footer__cta-col {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .footer__cta-row {
+  margin-bottom: 2rem;
+}
+.footer .footer__socials-row .col {
+  text-align: end;
+}
+.footer .footer__socials-row a {
+  padding-right: 0;
 }
 .footer .footer__col {
   display: flex;
@@ -1150,58 +2108,20 @@ textarea {
   margin: 2rem 0;
 }
 .footer .booking-btn {
-  margin-bottom: 1rem;
+  color: #f8f8f7;
+  padding: 14px 32px !important;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+
 /* Large devices (laptops/desktops, 992px and DOWN) */
 @media only screen and (max-width: 992px) {
-  .ctas {
-    display: none !important;
-  }
-
-  .separator {
-    height: 120px;
-  }
-
-  .mobile-cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-
-  .mobile-cta__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: 1.7rem 1.5rem 2.5rem; */
-  }
-
   .footer__cta {
     display: none !important;
-  }
-}
-/* Laptops Only ----------- */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .cta h2 {
-    font-size: 3.5rem;
-  }
-
-  .cta-h3 {
-    font-size: 1.5rem;
-  }
-}
-/* Tablets and Down ----------- */
-@media only screen and (max-width: 768px) {
-  .contact-info h6 {
-    margin-top: 2rem;
-  }
-}
-/* Tablets Only (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
-  .ctas {
-    padding: 2rem 1.25rem;
   }
 }
 /* Tablets and Up  ----------- */
@@ -1210,15 +2130,39 @@ textarea {
     display: none !important;
   }
 }
+/* Tablets and Down ----------- */
+@media only screen and (max-width: 768px) {
+  .footer a {
+    padding: 0;
+  }
+  .footer .footer__logo {
+    width: 11.5rem;
+  }
+  .footer .small {
+    font-size: 0.8rem;
+  }
+  .footer .footer__copyright-text {
+    white-space: nowrap;
+  }
+  .footer .footer__address {
+    text-align: end;
+  }
+  .footer .footer__address .footer__address-text {
+    margin-bottom: 1rem;
+  }
+  .footer .footer__icon {
+    width: 1.5rem;
+  }
+}
+/* Smartphones and Up ----------- */
+@media only screen and (min-device-width: 576px) {
+  .footer__mobile-links {
+    display: none !important;
+  }
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width: 576px) {
-  .hero__img,
-.ctas,
-.reviews,
-.showroom__left,
-.mailing-list__icons,
-.hr-container,
-.footer__top,
+  .footer__top,
 .footer__socials,
 .footer__links,
 .footer__address,
@@ -1226,82 +2170,15 @@ textarea {
     display: none !important;
   }
 
-  .hero {
-    margin-bottom: 1.7rem;
-  }
-
-  .hero__img-mobile {
-    display: block !important;
-    margin-top: 6.25rem;
-  }
-
-  .mobile-cta {
-    display: flex;
-    margin-bottom: 2rem;
-  }
-  .mobile-cta .mobile-cta__h1 {
-    margin-bottom: 1.5rem;
-  }
-
-  .showroom {
-    text-align: center !important;
-  }
-  .showroom .showroom__right {
-    padding: 5rem 1.5rem !important;
-  }
-  .showroom .showroom__h2 {
-    font-size: 2.5rem;
-  }
-  .showroom .showroom__h3 {
-    font-size: 1rem;
-  }
-
-  .mailing-list {
-    padding: 2rem 0 0 !important;
-  }
-  .mailing-list .mailing-list__title {
-    font-size: 2.5rem;
-  }
-  .mailing-list .mailing-list__paragraph {
-    font-size: 1rem;
-  }
-
-  .mailing-list__email-input,
-.mailing-list__submit-btn {
-    width: 80% !important;
-  }
-
-  .mobile-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .mobile-cta__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: 1.7rem 1.5rem 2.5rem; */
-  }
-
-  .collection__imgs .collection__img {
-    width: 342px !important;
-  }
-
-  .collection__item {
-    align-items: center !important;
-    max-width: 100% !important;
-  }
-
   .footer {
-    padding: 1.5rem 3.25rem;
+    padding: 1.5rem 3rem;
   }
   .footer .footer__mobile-link {
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    padding: 0 0 1rem;
     font-family: "Bebas Neue", sans-serif;
     font-size: 2rem;
     font-style: normal;
@@ -1311,16 +2188,18 @@ textarea {
   }
   .footer .footer__mobile-bottom {
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
   .footer .footer__mobile-bottom .footer__mobile-address {
     color: #181818;
-    font-family: "FreeSans Bold", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
     /* 22.4px */
+  }
+  .footer .footer__mobile-bottom #footer__mobile-address__second-line {
+    margin-bottom: 0;
   }
   .footer .footer__mobile-bottom .footer__mobile-logo {
     margin-top: 2rem;
@@ -1331,6 +2210,9 @@ textarea {
   .footer .footer__mobile-bottom .footer__socials-mobile a {
     padding: 0;
   }
+  .footer .footer__mobile-bottom .footer__socials-mobile .footer__icon {
+    width: 1.5rem;
+  }
   .footer .footer__mobile-bottom .footer__mobile-copyright {
     color: #181818;
     font-family: "Bebas Neue", sans-serif;
@@ -1340,12 +2222,6 @@ textarea {
     line-height: 127%;
     /* 20.32px */
     margin-top: 2rem;
-  }
-}
-/* Smartphones and Up ----------- */
-@media only screen and (min-device-width: 576px) {
-  .footer__mobile-links {
-    display: none !important;
   }
 }
 

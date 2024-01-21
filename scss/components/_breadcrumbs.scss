@@ -1,5 +1,11 @@
+/**
+ * Breadcrumbs
+ * ==========================================================================
+ */
+
 .breadcrumb {
 	--bs-breadcrumb-divider-color: $black-75;
+	margin-bottom: 0;
 }
 
 .breadcrumb__nav {
@@ -10,4 +16,11 @@
 	padding: 0;
 	color: $black-75;
 	font-weight: 400;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 576px) {
+	.breadcrumb__nav {
+		display: none !important;
+	}
 }

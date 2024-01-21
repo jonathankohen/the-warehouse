@@ -1,5 +1,14 @@
+/**
+ * Contact Page
+ * ==========================================================================
+ */
+
+.contact-submit-btn {
+	font-weight: 700;
+}
+
 .contact__top-row {
-	margin-top: 3.5rem;
+	gap: 6.5rem;
 
 	.contact-form {
 		input,
@@ -34,6 +43,7 @@
 		}
 
 		.contact-info__hr {
+			display: block;
 			width: 343px;
 			margin: 2rem 0 3rem;
 		}
@@ -57,5 +67,76 @@
 		font-style: normal;
 		line-height: 140%; /* 28px */
 		margin: 1.5rem 0;
+	}
+}
+
+/* Tablets Only (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+	.contact-info h6 {
+		margin-top: 2rem;
+	}
+
+	.contact__top-row {
+		gap: 3rem;
+	}
+
+	.contact-info__hr {
+		margin-bottom: 2rem !important;
+	}
+
+	.contact__bottom-row {
+		margin: 5.5rem 0 7rem;
+	}
+}
+
+/* Tablets and Down ----------- */
+@media only screen and (max-width: 768px) {
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 576px) {
+	h1 {
+		color: $black;
+		font-family: $display;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	p {
+		font-size: 0.9rem;
+	}
+
+	.contact__top-row {
+		gap: 0;
+	}
+
+	.contact-info {
+		margin-top: 3rem;
+
+		h6 {
+			color: $black;
+			font-family: $display;
+			font-size: 1.25rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			margin: 0 0 0.5rem !important;
+		}
+	}
+
+	.contact__bottom-row {
+		margin: 3rem 0;
+
+		.contact-info__address {
+			color: $black;
+			text-align: center;
+			font-family: $body;
+			font-size: 1.125rem;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+		}
 	}
 }

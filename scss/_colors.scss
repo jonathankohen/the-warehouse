@@ -1,4 +1,7 @@
-// Colors
+/**
+ * Colors
+ * ==========================================================================
+ */
 
 $white: rgb(248, 248, 247);
 $off-white: rgba(248, 248, 247, 0.75);
@@ -15,20 +18,3 @@ $blue: #3c4956;
 $green: #647162;
 $lellow: #efca46;
 $brown: #493c35;
-
-// Fonts
-
-$display: 'Bebas Neue', sans-serif;
-$body: 'FreeSans', sans-serif;
-$body-bold: 'FreeSans Bold', sans-serif;
-$body-oblique: 'FreeSans Oblique', sans-serif;
-$body-bold-oblique: 'FreeSans Bold Oblique', sans-serif;
-$lato: 'Lato', sans-serif;
-
-// Media Queries
-
-$phon-width: 576px;
-// $phone: 640px;
-$tablet-width: 768px;
-$laptop-width: 992px;
-$desktop-width: 1024px;

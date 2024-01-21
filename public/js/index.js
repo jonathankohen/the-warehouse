@@ -13,7 +13,8 @@ $(document).ready(function () {
 
 	const navbar = $('.navbar-nav');
 
-	const renderMobileDropdown = () => {
+	const renderResponsiveElements = () => {
+		/** Laptops & Down */
 		if ($(window).width() < 992) {
 			if ($('.navbar__link-mobile').length === 0) {
 				mobileCategories.forEach(function (category) {
@@ -52,12 +53,29 @@ $(document).ready(function () {
 		} else {
 			$('.navbar__link-mobile').remove();
 		}
+
+		/** Tablets & Down */
+		if ($(window).width() < 768) {
+		}
+
+		/** Mobile */
+		if ($(window).width() < 576) {
+			$('.reviews__list').insertAfter('.reviews__h2');
+			$('#reviews__btn')
+				.removeClass('black-outline-btn')
+				.addClass('solid-black-btn');
+		} else {
+			$('.reviews__list').insertAfter('.reviews__left');
+			$('#reviews__btn')
+				.addClass('black-outline-btn')
+				.removeClass('solid-black-btn');
+		}
 	};
 
-	renderMobileDropdown();
+	renderResponsiveElements();
 
 	$(window).resize(function () {
-		renderMobileDropdown();
+		renderResponsiveElements();
 	});
 
 	let toggleCollapse = true;

@@ -1,4 +1,17 @@
+/**
+ * About Page
+ * ==========================================================================
+ */
+
+.about-mobile {
+	display: none;
+}
+
 .about {
+	h1 {
+		margin: 0.25rem 0;
+	}
+
 	h4 {
 		margin-bottom: 1rem;
 	}
@@ -9,7 +22,7 @@
 
 	.about__top-row__imgs {
 		display: flex;
-		margin-top: 3rem;
+		margin-top: 2rem;
 		margin-bottom: 3rem;
 
 		img {
@@ -39,10 +52,12 @@
 	}
 
 	.about__tagline {
-		font-family: $body;
-		font-weight: 600;
-		font-size: 1.25rem;
 		color: $black-75;
+		font-family: $body;
+		font-weight: 700;
+		font-size: 1rem;
+		font-style: normal;
+		line-height: 140%; /* 28px */
 		white-space: nowrap;
 	}
 
@@ -52,6 +67,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		width: 50%;
 	}
 }
 
@@ -94,5 +110,152 @@
 	.faq-arrow {
 		width: 2rem;
 		height: 0.5rem;
+	}
+}
+
+/* Tablets Only (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+	.about-top-img {
+		width: 500px !important;
+		height: auto !important;
+		margin-bottom: 1.5rem !important;
+	}
+}
+
+/* Tablets and Down ----------- */
+@media only screen and (max-width: 768px) {
+	.about-mobile {
+		display: none;
+	}
+
+	.contact-info h6 {
+		margin-top: 2rem;
+	}
+
+	.about {
+		h1 {
+			margin: 0.25rem 0;
+		}
+
+		p {
+			font-size: 0.85rem;
+		}
+
+		.left-col {
+			padding-left: 0;
+		}
+
+		.about__top-row__imgs {
+			margin-top: 1rem;
+			margin-bottom: 2rem;
+
+			.about__top-col__imgs {
+				text-align: center;
+
+				.about-top-img {
+					width: 500px !important;
+					height: auto !important;
+					margin-bottom: 1.5rem !important;
+				}
+			}
+		}
+
+		.about__tagline {
+			font-size: 0.8rem;
+		}
+
+		.about__bottom-row {
+			margin: 2rem 0 4.25rem;
+
+			h4 {
+				margin-bottom: 0.5rem;
+			}
+
+			.solid-black-btn {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 576px) {
+	.about {
+		display: none;
+	}
+
+	.about-mobile {
+		display: block;
+
+		h5 {
+			color: $black;
+			font-family: $display;
+			font-size: 2.5rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+
+		img {
+			border-radius: 4px;
+		}
+
+		.about-mobile__top-row {
+			margin-bottom: 1rem;
+		}
+
+		.about-mobile__middle-row {
+			margin-top: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		.about-mobile__bottom-row {
+			margin-top: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		.mobile-about-text {
+			color: $black-75;
+			font-family: $body;
+			font-size: 1rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 160%; /* 25.6px */
+		}
+
+		.about__tagline {
+			text-align: center;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 140%; /* 22.4px */
+		}
+
+		.solid-black-btn {
+			width: 100%;
+		}
+	}
+
+	.faqs {
+		margin-top: 2rem;
+
+		h3 {
+			font-size: 1.5rem;
+		}
+
+		.faq__question {
+			font-size: 1rem;
+		}
+
+		.faq__text {
+			font-size: 0.8rem;
+		}
+	}
+
+	.metric {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
 	}
 }

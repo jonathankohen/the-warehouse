@@ -1,7 +1,69 @@
+/**
+ * Tablet Media Queries
+ * ==========================================================================
+ */
+
 /* Tablets and Down ----------- */
 @media only screen and (max-width: 768px) {
 	.contact-info h6 {
 		margin-top: 2rem;
+	}
+
+	.about {
+		h1 {
+			margin: 0.25rem 0;
+		}
+
+		.left-col {
+			padding-left: 0;
+		}
+
+		.about__top-row__imgs {
+			margin-top: 1rem;
+			margin-bottom: 2rem;
+
+			.about__top-col__imgs {
+				text-align: center;
+
+				.about-top-img {
+					width: 500px !important;
+					height: auto !important;
+					margin-bottom: 1.5rem !important;
+				}
+			}
+		}
+
+		.about__tagline {
+			font-size: 0.9rem;
+		}
+
+		.about__bottom-row {
+			margin: 2rem 0 4.25rem;
+
+			h4 {
+				margin-bottom: 0.5rem;
+			}
+
+			.solid-black-btn {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.footer {
+		a {
+			padding: 0;
+		}
+
+		.footer__icon {
+			width: 1.75rem;
+		}
+
+		.footer__address {
+			p {
+				margin: 0;
+			}
+		}
 	}
 }
 

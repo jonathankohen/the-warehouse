@@ -24,6 +24,7 @@
 		"grunt-contrib-jshint": "^3.2.0"
 	},
 	"dependencies": {
+		"dotenv": "^16.3.1",
 		"grunt-contrib-uglify": "^5.2.2"
 	}
 }

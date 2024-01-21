@@ -1,8 +1,13 @@
+/**
+ * Mobile Media Queries
+ * ==========================================================================
+ */
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width: 576px) {
+	.breadcrumb__nav,
 	.hero__img,
 	.ctas,
-	.reviews,
 	.showroom__left,
 	.mailing-list__icons,
 	.hr-container,
@@ -14,21 +19,85 @@
 		display: none !important;
 	}
 
+	.navbar__logo {
+		width: 7rem;
+		padding-left: 1rem;
+	}
+
+	.navbar-toggler {
+		padding-bottom: 0.5rem;
+	}
+
 	.hero {
 		margin-bottom: 1.7rem;
 	}
 
 	.hero__img-mobile {
 		display: block !important;
-		margin-top: 6.25rem;
+		margin-top: 3.25rem;
+	}
+
+	.reviews {
+		// padding: 1.5rem;
+
+		#reviews-container {
+			padding: 0;
+
+			// .reviews__list {
+			// 	justify-content: center;
+			// }
+
+			.review__active {
+				margin-left: 0;
+			}
+
+			.reviews__h2 {
+				margin-bottom: 2.5rem;
+			}
+
+			.reviews__left {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.reviews__arrows {
+				margin: 2rem 0;
+				align-self: center;
+			}
+
+			#reviews__btn {
+				width: 100%;
+			}
+		}
 	}
 
 	.mobile-cta {
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		margin-bottom: 2rem;
 
 		.mobile-cta__h1 {
+			font-family: $display;
+			font-size: 2.1rem;
+			font-style: normal;
+			color: $black;
+			line-height: 124%; /* 3.255rem */
+			margin: 0;
 			margin-bottom: 1.5rem;
+		}
+
+		.mobile-cta__btn {
+			font-family: $body;
+			font-size: 1rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 1.55rem;
+			height: 3.25rem;
+			padding: 0.625rem 2rem;
+			border-radius: 0.25rem;
+			background: $black;
+			color: #f9f9f8;
 		}
 	}
 
@@ -36,11 +105,11 @@
 		text-align: center !important;
 
 		.showroom__right {
-			padding: 5rem 1.5rem !important;
+			padding: 5rem 2.5rem !important;
 		}
 
 		.showroom__h2 {
-			font-size: 2.5rem;
+			font-size: 2rem;
 		}
 
 		.showroom__h3 {
@@ -61,22 +130,20 @@
 	}
 
 	.mailing-list__email-input,
-	.mailing-list__submit-btn {
-		width: 80% !important;
+	.mailing-list__submit-btn,
+	#showroom__btn {
+		width: 100% !important;
 	}
+
+	// .mailing-list__email-input,
+	// .mailing-list__submit-btn {
+	// 	width: 80% !important;
+	// }
 
 	.mobile-input {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.mobile-cta__btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		/* margin: 1.7rem 1.5rem 2.5rem; */
 	}
 
 	.collection__imgs {
@@ -89,60 +156,6 @@
 	.collection__item {
 		align-items: center !important;
 		max-width: 100% !important;
-	}
-
-	.footer {
-		padding: 1.5rem 3.25rem;
-
-		.footer__mobile-link {
-			display: flex !important;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			padding: 1rem 0;
-			font-family: $display;
-			font-size: 2rem;
-			font-style: normal;
-			font-weight: 400;
-			line-height: normal;
-			color: $black;
-		}
-
-		.footer__mobile-bottom {
-			text-align: center;
-			margin-top: 1.5rem;
-
-			.footer__mobile-address {
-				color: $black;
-				font-family: $body-bold;
-				font-size: 1rem;
-				font-style: normal;
-				font-weight: 700;
-				line-height: 140%; /* 22.4px */
-			}
-
-			.footer__mobile-logo {
-				margin-top: 2rem;
-			}
-
-			.footer__socials-mobile {
-				margin-top: 2rem;
-
-				a {
-					padding: 0;
-				}
-			}
-
-			.footer__mobile-copyright {
-				color: $black;
-				font-family: $display;
-				font-size: 1rem;
-				font-style: normal;
-				font-weight: 400;
-				line-height: 127%; /* 20.32px */
-				margin-top: 2rem;
-			}
-		}
 	}
 }
 
